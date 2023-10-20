@@ -1,8 +1,10 @@
 import Main from "./app/components/main/Main";
 
-export function App() {
+const App=()=> {
   return (
+    <div className="pt-24">
     <Main/>
+    </div>
   );
 }
 

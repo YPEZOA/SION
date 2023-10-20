@@ -12,8 +12,8 @@ export const RouterRoot =()=> {
 
     return (
         <>
-        <Header/>
-        <RouterProvider router={router}/>
+            <Header/>
+            <RouterProvider router={router}/>
         </>
     )
 }

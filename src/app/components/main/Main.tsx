@@ -1,6 +1,5 @@
-import React from "react"
 
-const Main: React.FC = ()=> {
+const Main = ()=> {
     return (
         <div>
             <h1 className="underline">Main component works!</h1>
