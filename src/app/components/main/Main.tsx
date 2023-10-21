@@ -1,10 +1,11 @@
+import FirstContent from "./components/FirstContent/FirstContent";
 
-const Main = ()=> {
-    return (
-        <div>
-            <h1 className="underline">Main component works!</h1>
-        </div>
-    )
-}
+const Main = () => {
+  return (
+    <>
+      <FirstContent />
+    </>
+  );
+};
 
-export default Main
+export default Main;

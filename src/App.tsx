@@ -1,11 +1,7 @@
-import Main from "./app/components/main/Main";
+import { RouterRoot } from "./app/router/RouterRoot";
 
-const App=()=> {
-  return (
-    <div className="pt-24">
-    <Main/>
-    </div>
-  );
-}
+const App = () => {
+  return <RouterRoot />;
+};
 
 export default App;
