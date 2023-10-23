@@ -27,7 +27,7 @@ const Navlink = ({ path, children }: LinkProps) => {
 const Header = () => {
   return (
     // shadow-[0_1px_10px_#000] para shadow cuando se haga scroll
-    <nav className="bg-[#1E1E1E]/60 backdrop-blur-sm fixed w-full z-10 ">
+    <nav className="shadow-[0_0.5px_8px_#000] bg-[#1E1E1E]/70 backdrop-blur-sm fixed w-full z-10">
       <div className="mx-auto w-11/12 flex justify-between items-center h-14 md:h-20 ">
         <Link to="/">
           <div className="flex items-center transition ease-in-out delay-50 duration-300 hover:scale-105 cursor-pointer">
