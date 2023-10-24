@@ -34,7 +34,7 @@ const Header = () => {
             <img
               loading="lazy"
               className="md:w-[40px]"
-              src="/public/logoSion.png"
+              src="/logoSion.png"
               alt="Sion Logo"
               width={30}
             />

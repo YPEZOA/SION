@@ -57,7 +57,7 @@ const Vision = () => {
           nuestra <span className="font-extrabold">visión</span>
         </h1>
       </HeadingAnimation>
-      <div className="grid place-items-center md:place-items-start sm:grid-cols-2 lg:grid-cols-4 my-10">
+      <div className="grid place-items-center lg:place-items-center md:place-items-start sm:grid-cols-2 lg:grid-cols-4 my-10">
         <Card
           url="/src/assets/images/evangelizar.jpeg"
           text="Evangelizar"
