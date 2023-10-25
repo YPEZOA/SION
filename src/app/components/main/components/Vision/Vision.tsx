@@ -59,24 +59,24 @@ const Vision = () => {
       </HeadingAnimation>
       <div className="grid place-items-center lg:place-items-center md:place-items-start sm:grid-cols-2 lg:grid-cols-4 my-10">
         <Card
-          url="/src/assets/images/evangelizar.jpeg"
+          url="/src/assets/images/evangelizar.webp"
           text="Evangelizar"
           transitionDelay={0.2}
         />
         <Card
-          url="/src/assets/images/afirmar.jpeg"
+          url="/src/assets/images/afirmar.webp"
           text="Afirmar"
           styles="mt-10"
           transitionDelay={0.3}
         />
         <Card
-          url="/src/assets/images/discipular.jpeg"
+          url="/src/assets/images/discipular.webp"
           text="Discipular"
           styles="mt-10 md:mt-0"
           transitionDelay={0.5}
         />
         <Card
-          url="/src/assets/images/enviar.jpeg"
+          url="/src/assets/images/enviar.webp"
           text="Enviar"
           styles="mt-10"
           transitionDelay={0.7}

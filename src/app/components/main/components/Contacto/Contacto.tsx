@@ -2,7 +2,7 @@ const Contacto = () => {
   return (
     <section
       style={{
-        backgroundImage: "url('/src/assets/images/danza.png')",
+        backgroundImage: "url('/src/assets/images/danza.webp')",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         height: " 300px",

@@ -56,7 +56,7 @@ const Header = () => {
             />
           </a>
         </div>
-        <button className="md:hidden">
+        <button className="block md:hidden">
           <img
             src="/src/assets/icons/hamburger-icon.png"
             alt="Hamburguer Menu"

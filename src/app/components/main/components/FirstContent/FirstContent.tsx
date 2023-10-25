@@ -1,5 +1,5 @@
 import ElementDelay from "@/app/components/layouts/elements/ElementDelay";
-import contentBackground from "/src/assets/images/first-content.jpg";
+import contentBackground from "/src/assets/images/first-content.webp";
 import { colors } from "@/constants/colors";
 
 const FirstContent = () => {
