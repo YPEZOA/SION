@@ -4,9 +4,10 @@ import { useInView } from "react-intersection-observer";
 
 interface Props {
   children?: React.ReactNode;
+  styles?: string;
 }
 
-const HeadingAnimation = ({ children }: Props) => {
+const HeadingAnimation = ({ children, styles }: Props) => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
 
@@ -23,6 +24,7 @@ const HeadingAnimation = ({ children }: Props) => {
 
   return (
     <motion.div
+      className={styles}
       variants={elementVariants}
       ref={ref}
       initial="hidden"

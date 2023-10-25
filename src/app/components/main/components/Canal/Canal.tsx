@@ -4,7 +4,7 @@ import HeadingAnimation from "@/app/components/layouts/elements/HeadingAnimation
 const Canal = () => {
   return (
     <section
-      className="bg-white px-8 md:px-24 py-10 h-[400px]"
+      className=" bg-white px-8 md:px-24 py-10 md:h-[400px]"
       style={{
         backgroundImage: "url('/src/assets/images/sion.png')",
         backgroundRepeat: "no-repeat",
@@ -20,8 +20,8 @@ const Canal = () => {
           <small>señal en vivo</small>
         </div>
       </ElementDelay>
-      <div className="flex justify-between items-center">
-        <HeadingAnimation>
+      <div className="flex justify-between items-center mt-3">
+        <HeadingAnimation styles="2xl:w-[30%]">
           <article className="flex flex-col">
             <div className="flex items-center">
               <img
@@ -32,19 +32,16 @@ const Canal = () => {
               />
               <span>Casa Si&oacute;n Santiago</span>
             </div>
-            <h1 className="font-black text-3xl md:text-4xl xl:text-5xl tracking-tighter">
-              Suscr&iacute;bete a nuesto canal de Youtube
+            <h1 className="font-black text-5xl tracking-tighter">
+              Suscr&iacute;bete a nuestro canal de Youtube
             </h1>
           </article>
         </HeadingAnimation>
-        <div className="md:w-[320px]">
-          <iframe
-            className="rounded-xl mt-10"
-            src="https://www.youtube.com/embed/g9A9Kw-Da0I"
-            width={320}
-            height={250}
-          ></iframe>
-        </div>
+        <iframe
+          className="rounded-xl w-[100%] md:w-[50%] xl:w-[40%]"
+          src="https://www.youtube.com/embed/g9A9Kw-Da0I"
+          height={240}
+        ></iframe>
       </div>
     </section>
   );
