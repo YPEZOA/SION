@@ -8,7 +8,7 @@ interface Props {
   styles?: string;
 }
 
-const ElementDelay = ({ delay = 0.3, children, styles }: Props) => {
+const ElementDelay = ({ delay = 0.5, children, styles }: Props) => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
 

@@ -12,11 +12,10 @@ const Navlink = ({ path, children }: LinkProps) => {
   return (
     <Link
       style={{
-        backgroundColor: pathMatched ? "rgb(0 255 243 / 31%)" : undefined,
-        color: pathMatched ? colors.white : undefined,
+        color: pathMatched ? colors.primary : undefined,
         transition: "all .5s ease",
       }}
-      className="text-white text-md uppercase hover:text-[#009B94] p-3 rounded-md"
+      className="text-white font-medium text-md uppercase  p-3 rounded-md"
       to={path}
     >
       {children}
@@ -32,7 +31,6 @@ const Header = () => {
         <Link to="/">
           <div className="flex items-center transition ease-in-out delay-50 duration-300 hover:scale-105 cursor-pointer">
             <img
-              loading="lazy"
               className="md:w-[40px]"
               src="/logoSion.png"
               alt="Sion Logo"
@@ -45,17 +43,16 @@ const Header = () => {
           <Navlink path="/predicas">prédicas</Navlink>
           <Navlink path="/escuelas">escuelas</Navlink>
           <Navlink path="/contacto">contacto</Navlink>
-          <a href="https://www.radio7fm.cl/" target="blank">
-            <img
-              loading="lazy"
-              className="mb-2 cursor-pointer"
-              src="/src/assets/icons/radio7-logo.png"
-              alt="Radio7"
-              width={130}
-              height={0}
-            />
-          </a>
         </div>
+        <a href="https://www.radio7fm.cl/" target="blank">
+          <img
+            className="mb-2 cursor-pointer"
+            src="/src/assets/icons/radio7-logo.png"
+            alt="Radio7"
+            width={120}
+            height={0}
+          />
+        </a>
         <button className="block md:hidden">
           <img
             src="/src/assets/icons/hamburger-icon.png"

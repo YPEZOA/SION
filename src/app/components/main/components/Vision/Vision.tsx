@@ -1,4 +1,5 @@
 import HeadingAnimation from "@/app/components/layouts/elements/HeadingAnimation";
+import SectionContainer from "@/app/components/layouts/elements/SectionContainer";
 import { useAnimation, motion } from "framer-motion";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
@@ -51,38 +52,40 @@ const Card = ({ url, text, styles, transitionDelay }: Props) => {
 
 const Vision = () => {
   return (
-    <section className="px-8 md:px-24 py-8">
-      <HeadingAnimation>
-        <h1 className="font-thin tracking-[7px] text-2xl md:text-4xl uppercase text-black">
-          nuestra <span className="font-extrabold">visión</span>
-        </h1>
-      </HeadingAnimation>
-      <div className="grid place-items-center lg:place-items-center md:place-items-start sm:grid-cols-2 lg:grid-cols-4 my-10">
-        <Card
-          url="/src/assets/images/evangelizar.webp"
-          text="Evangelizar"
-          transitionDelay={0.2}
-        />
-        <Card
-          url="/src/assets/images/afirmar.webp"
-          text="Afirmar"
-          styles="mt-10"
-          transitionDelay={0.3}
-        />
-        <Card
-          url="/src/assets/images/discipular.webp"
-          text="Discipular"
-          styles="mt-10 md:mt-0"
-          transitionDelay={0.5}
-        />
-        <Card
-          url="/src/assets/images/enviar.webp"
-          text="Enviar"
-          styles="mt-10"
-          transitionDelay={0.7}
-        />
-      </div>
-    </section>
+    <div className="bg-[#e7e7e7] my-10 py-2">
+      <SectionContainer>
+        <HeadingAnimation>
+          <h1 className="font-thin tracking-[2px] text-2xl md:text-4xl uppercase text-black">
+            nuestra <span className="font-extrabold">visión</span>
+          </h1>
+        </HeadingAnimation>
+        <div className="grid place-items-center lg:place-items-center md:place-items-start sm:grid-cols-2 lg:grid-cols-4 my-10">
+          <Card
+            url="/src/assets/images/evangelizar.webp"
+            text="Evangelizar"
+            transitionDelay={0.2}
+          />
+          <Card
+            url="/src/assets/images/afirmar.webp"
+            text="Afirmar"
+            styles="mt-10"
+            transitionDelay={0.3}
+          />
+          <Card
+            url="/src/assets/images/discipular.webp"
+            text="Discipular"
+            styles="mt-10 md:mt-0"
+            transitionDelay={0.5}
+          />
+          <Card
+            url="/src/assets/images/enviar.webp"
+            text="Enviar"
+            styles="mt-10"
+            transitionDelay={0.7}
+          />
+        </div>
+      </SectionContainer>
+    </div>
   );
 };
 

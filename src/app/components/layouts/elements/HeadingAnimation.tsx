@@ -12,7 +12,7 @@ const HeadingAnimation = ({ children, styles }: Props) => {
   const [ref, inView] = useInView();
 
   const elementVariants = {
-    visible: { x: 0, opacity: 1, transition: { delay: 0.2, duration: 1 } },
+    visible: { x: 0, opacity: 1, transition: { delay: 0.5, duration: 1 } },
     hidden: { x: -30, opacity: 0 },
   };
 

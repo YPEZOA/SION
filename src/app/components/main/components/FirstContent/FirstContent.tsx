@@ -32,7 +32,6 @@ const FirstContent = () => {
         <ElementDelay delay={0.2}>
           <img
             className="pointer-events-none"
-            loading="lazy"
             src="/src/assets/icons/arrow-down.png"
             alt="Down page icon"
             width={50}
