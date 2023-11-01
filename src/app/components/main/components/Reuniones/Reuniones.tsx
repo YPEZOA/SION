@@ -4,16 +4,16 @@ import Cards from "@/app/components/main/components/Reuniones/components/Card/Ca
 
 const Reuniones = () => {
   return (
-    <SectionContainer styles=" my-32">
-      <HeadingAnimation>
+    <>
+      <HeadingAnimation styles="mt-10">
         <h1 className="font-thin tracking-[2px] text-2xl md:text-4xl uppercase text-black">
           nuestras <span className="font-extrabold">reuniones</span>
         </h1>
       </HeadingAnimation>
-      <article className="mt-10">
+      <SectionContainer>
         <Cards />
-      </article>
-    </SectionContainer>
+      </SectionContainer>
+    </>
   );
 };
 

@@ -5,7 +5,7 @@ import SectionContainer from "@/app/components/layouts/elements/SectionContainer
 const Canal = () => {
   return (
     <div
-      className="flex items-center md:h-[400px] bg-[#e7e7e7]"
+      className="flex items-center md:h-[400px] bg-white mt-40"
       style={{
         flex: 1,
         backgroundImage: "url('/src/assets/images/sion.png')",
@@ -14,7 +14,7 @@ const Canal = () => {
         backgroundPosition: "right",
       }}
     >
-      <SectionContainer styles="my-0">
+      <SectionContainer>
         <div className="md:flex justify-between items-center mt-12 md:mt-3">
           <HeadingAnimation>
             <article className="xl:w-[80%] flex flex-col md:mb-0 mb-3">
@@ -44,7 +44,7 @@ const Canal = () => {
               </h1>
             </article>
           </HeadingAnimation>
-          <ElementDelay delay={0.5} styles="w-[100%] xl:w-[50%] 2xl:w-[30%]">
+          <ElementDelay delay={0.3} styles="w-[100%] xl:w-[50%] 2xl:w-[30%]">
             <div className="text-right leading-4 mb-2">
               <p>
                 Cada <span className="font-black">Domingo</span> a las 11:00hrs.

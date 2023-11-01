@@ -5,9 +5,14 @@ import { useInView } from "react-intersection-observer";
 interface Props {
   children?: React.ReactNode;
   styles?: string;
+  hasBackground?: boolean;
 }
 
-const HeadingAnimation = ({ children, styles }: Props) => {
+const HeadingAnimation = ({
+  children,
+  styles,
+  hasBackground = false,
+}: Props) => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
 
@@ -23,15 +28,21 @@ const HeadingAnimation = ({ children, styles }: Props) => {
   }, [controls, inView]);
 
   return (
-    <motion.div
-      className={styles}
-      variants={elementVariants}
-      ref={ref}
-      initial="hidden"
-      animate={controls}
+    <div
+      className={`${
+        hasBackground ? "bg-[#1E1E1E]" : undefined
+      } px-5 md:px-20 py-4`}
     >
-      {children}
-    </motion.div>
+      <motion.div
+        className={`${styles}`}
+        variants={elementVariants}
+        ref={ref}
+        initial="hidden"
+        animate={controls}
+      >
+        {children}
+      </motion.div>
+    </div>
   );
 };
 

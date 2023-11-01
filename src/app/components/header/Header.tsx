@@ -1,5 +1,5 @@
 import { colors } from "@/constants/colors";
-import React from "react";
+import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 interface LinkProps {
   path: string;
@@ -12,7 +12,7 @@ const Navlink = ({ path, children }: LinkProps) => {
   return (
     <Link
       style={{
-        color: pathMatched ? colors.primary : undefined,
+        color: pathMatched ? colors.orangeSecondary500 : undefined,
         transition: "all .5s ease",
       }}
       className="text-white font-medium text-md uppercase  p-3 rounded-md"
@@ -24,17 +24,22 @@ const Navlink = ({ path, children }: LinkProps) => {
 };
 
 const Header = () => {
+  const scroll = window.scrollY;
+  console.log(scroll);
+  useEffect(() => {
+    console.log(scroll);
+  }, [scroll]);
+
   return (
-    // shadow-[0_1px_10px_#000] para shadow cuando se haga scroll
-    <nav className="shadow-[0_0.5px_8px_#000] bg-[#1E1E1E]/70 backdrop-blur-sm fixed w-full z-10">
-      <div className="mx-auto w-11/12 flex justify-between items-center h-14 md:h-20 ">
+    <nav className="bg-[#1E1E1E]/50 backdrop-blur-sm fixed w-full z-10 h-14 flex items-center">
+      <div className="w-11/12 flex justify-between items-center mx-auto">
         <Link to="/">
           <div className="flex items-center transition ease-in-out delay-50 duration-300 hover:scale-105 cursor-pointer">
             <img
-              className="md:w-[40px]"
+              className="md:w-[35px]"
               src="/logoSion.png"
               alt="Sion Logo"
-              width={30}
+              width={10}
             />
             <span className="text-white text-md font-bold ml-1 mt-2">SION</span>
           </div>
@@ -46,10 +51,10 @@ const Header = () => {
         </div>
         <a href="https://www.radio7fm.cl/" target="blank">
           <img
-            className="mb-2 cursor-pointer"
+            className="cursor-pointer mb-1"
             src="/src/assets/icons/radio7-logo.png"
             alt="Radio7"
-            width={120}
+            width={100}
             height={0}
           />
         </a>

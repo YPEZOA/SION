@@ -12,10 +12,10 @@ const Main = () => {
     <>
       <FirstContent />
       <Vision />
-      <Adoracion />
       <Reuniones />
-      <Canal />
+      <Adoracion />
       <Casas />
+      <Canal />
       <Servidores />
       <Contacto />
     </>
