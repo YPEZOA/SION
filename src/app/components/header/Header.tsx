@@ -1,8 +1,8 @@
 import React from "react";
-import { colors } from "@/constants/colors";
 import { Link, useLocation } from "react-router-dom";
-import radioIcon from "src/assets/icons/radio7-logo.png";
-import hamburguer from "src/assets/icons/hamburger-icon.png";
+import { colors } from "@/constants/colors";
+import radioIcon from "/radio7-logo.png";
+import hamburguer from "/hamburger-icon.png";
 interface LinkProps {
   path: string;
   children: React.ReactNode;
