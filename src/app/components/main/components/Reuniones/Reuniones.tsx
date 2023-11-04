@@ -4,8 +4,8 @@ import Cards from "@/app/components/main/components/Reuniones/components/Card/Ca
 
 const Reuniones = () => {
   return (
-    <>
-      <HeadingAnimation styles="mt-10">
+    <div className="mb-40 mt-20">
+      <HeadingAnimation>
         <h1 className="font-thin tracking-[2px] text-2xl md:text-4xl uppercase text-black">
           nuestras <span className="font-extrabold">reuniones</span>
         </h1>
@@ -13,7 +13,7 @@ const Reuniones = () => {
       <SectionContainer>
         <Cards />
       </SectionContainer>
-    </>
+    </div>
   );
 };
 

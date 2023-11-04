@@ -1,5 +1,5 @@
-import { useAnimation, motion } from "framer-motion";
 import { useEffect } from "react";
+import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 interface Props {
@@ -29,9 +29,7 @@ const HeadingAnimation = ({
 
   return (
     <div
-      className={`${
-        hasBackground ? "bg-[#1E1E1E]" : undefined
-      } px-5 md:px-20 py-4`}
+      className={`${hasBackground ? "bg-[#1E1E1E]" : ""} px-5 lg:px-20 py-4`}
     >
       <motion.div
         className={`${styles}`}

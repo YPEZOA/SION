@@ -17,7 +17,7 @@ const Canal = () => {
       <SectionContainer>
         <div className="md:flex justify-between items-center mt-12 md:mt-3">
           <HeadingAnimation>
-            <article className="xl:w-[80%] flex flex-col md:mb-0 mb-3">
+            <article className="xl:w-[90%] flex flex-col md:mb-0 mb-3">
               <div className="flex items-center">
                 <img
                   src="/src/assets/icons/youtube-logo.png"
@@ -40,7 +40,7 @@ const Canal = () => {
                 </a>
               </div>
               <h1 className="text-3xl sm:font-black lg:text-5xl tracking-tighter">
-                Suscr&iacute;bete a nuestro canal de Youtube
+                S&iacute;guenos en nuestro canal
               </h1>
             </article>
           </HeadingAnimation>

@@ -1,7 +1,7 @@
 const Cards = () => {
   return (
     <section className="md:flex md:justify-between gap-6">
-      <div className="mt-4 md:mt-0 py-4 px-8 shadow-[0_0.5px_8px_#d1d1d1] rounded-[16px] text-center flex flex-col h-[300px]">
+      <div className="mt-4 md:mt-0 py-4 px-8 shadow-[0_0.5px_8px_#d1d1d1] rounded-[16px] text-center flex flex-col">
         <header className="flex flex-col items-center">
           Casas de avivamiento{" "}
           <span className="h-1 w-[100px] bg-[#FF9A3E] rounded-md mt-1"></span>

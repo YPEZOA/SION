@@ -11,7 +11,7 @@ const Adoracion = () => {
       }}
     >
       <HeadingAnimation>
-        <h1 className="text-center font-light md:pl-24 text-4xl text-white md:w-[40%]">
+        <h1 className="text-center font-light lg:pl-24 text-4xl text-white lg:w-[40%]">
           Lorem ipsum dolor sit ao quam totam nostrum voluptas explicabo ut
           ipsa? tibus iste pariatur incidunt!
         </h1>

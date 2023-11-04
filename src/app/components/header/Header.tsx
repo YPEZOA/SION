@@ -1,10 +1,11 @@
+import React from "react";
 import { colors } from "@/constants/colors";
-import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 interface LinkProps {
   path: string;
   children: React.ReactNode;
 }
+
 const Navlink = ({ path, children }: LinkProps) => {
   const { pathname } = useLocation();
   const pathMatched = path === pathname;
@@ -15,7 +16,7 @@ const Navlink = ({ path, children }: LinkProps) => {
         color: pathMatched ? colors.orangeSecondary500 : undefined,
         transition: "all .5s ease",
       }}
-      className="text-white font-medium text-md uppercase  p-3 rounded-md"
+      className="text-white font-medium text-md uppercase  mx-4 rounded-md"
       to={path}
     >
       {children}
@@ -24,12 +25,6 @@ const Navlink = ({ path, children }: LinkProps) => {
 };
 
 const Header = () => {
-  const scroll = window.scrollY;
-  console.log(scroll);
-  useEffect(() => {
-    console.log(scroll);
-  }, [scroll]);
-
   return (
     <nav className="bg-[#1E1E1E]/50 backdrop-blur-sm fixed w-full z-10 h-14 flex items-center">
       <div className="w-11/12 flex justify-between items-center mx-auto">
@@ -39,7 +34,7 @@ const Header = () => {
               className="md:w-[35px]"
               src="/logoSion.png"
               alt="Sion Logo"
-              width={10}
+              width={30}
             />
             <span className="text-white text-md font-bold ml-1 mt-2">SION</span>
           </div>
@@ -48,16 +43,16 @@ const Header = () => {
           <Navlink path="/predicas">prédicas</Navlink>
           <Navlink path="/escuelas">escuelas</Navlink>
           <Navlink path="/contacto">contacto</Navlink>
+          <a href="https://www.radio7fm.cl/" target="blank">
+            <img
+              className="cursor-pointer mb-1"
+              src="/src/assets/icons/radio7-logo.png"
+              alt="Radio7"
+              width={100}
+              height={0}
+            />
+          </a>
         </div>
-        <a href="https://www.radio7fm.cl/" target="blank">
-          <img
-            className="cursor-pointer mb-1"
-            src="/src/assets/icons/radio7-logo.png"
-            alt="Radio7"
-            width={100}
-            height={0}
-          />
-        </a>
         <button className="block md:hidden">
           <img
             src="/src/assets/icons/hamburger-icon.png"
