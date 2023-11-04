@@ -5,7 +5,7 @@ const Adoracion = () => {
     <section
       className="flex items-center h-[600px] bg-fixed backdrop-opacity-60"
       style={{
-        backgroundImage: "url('src/assets/images/danza.webp')",
+        backgroundImage: "url('/danza.webp')",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}

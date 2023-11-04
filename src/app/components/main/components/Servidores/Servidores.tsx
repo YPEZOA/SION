@@ -1,7 +1,7 @@
 import ElementDelay from "@/app/components/layouts/elements/ElementDelay";
 import HeadingAnimation from "@/app/components/layouts/elements/HeadingAnimation";
 import SectionContainer from "@/app/components/layouts/elements/SectionContainer";
-import servidoresImage from "src/assets/images/image8.png";
+import servidoresImage from "/image8.png";
 
 const Servidores = () => {
   return (

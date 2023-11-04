@@ -1,6 +1,6 @@
 import ElementDelay from "@/app/components/layouts/elements/ElementDelay";
 import SectionContainer from "@/app/components/layouts/elements/SectionContainer";
-import backgroundContact from "src/assets/images/background-contact.webp";
+import backgroundContact from "/background-contact.webp";
 
 const Contacto = () => {
   const whatsappChating = () => {
@@ -22,7 +22,7 @@ const Contacto = () => {
             className=" transition-all duration-200 uppercase hover:bg-[#00781A] text-white bg-[#00BD2A] py-2 px-5 rounded-full flex items-center gap-2"
           >
             <img
-              src="src/assets/icons/whatsapp-icon.png"
+              src="/whatsapp-icon.png"
               alt="Whatsapp"
               width={30}
               height={20}
