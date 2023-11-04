@@ -22,7 +22,7 @@ const Contacto = () => {
             className=" transition-all duration-200 uppercase hover:bg-[#00781A] text-white bg-[#00BD2A] py-2 px-5 rounded-full flex items-center gap-2"
           >
             <img
-              src="/src/assets/icons/whatsapp-icon.png"
+              src="src/assets/icons/whatsapp-icon.png"
               alt="Whatsapp"
               width={30}
               height={20}

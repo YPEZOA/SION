@@ -8,7 +8,7 @@ const Canal = () => {
       className="flex items-center md:h-[400px] bg-white mt-40"
       style={{
         flex: 1,
-        backgroundImage: "url('/src/assets/images/sion.png')",
+        backgroundImage: "url('src/assets/images/sion.png')",
         backgroundRepeat: "no-repeat",
         backgroundSize: "container",
         backgroundPosition: "right",
@@ -20,7 +20,7 @@ const Canal = () => {
             <article className="xl:w-[90%] flex flex-col md:mb-0 mb-3">
               <div className="flex items-center">
                 <img
-                  src="/src/assets/icons/youtube-logo.png"
+                  src="src/assets/icons/youtube-logo.png"
                   alt="Canal Youtube"
                   width={30}
                   height={30}
@@ -32,7 +32,7 @@ const Canal = () => {
                 >
                   <img
                     className="ml-1 mb-1"
-                    src="/src/assets/icons/external-link.png"
+                    src="src/assets/icons/external-link.png"
                     alt="Link Canal"
                     width={20}
                     height={20}

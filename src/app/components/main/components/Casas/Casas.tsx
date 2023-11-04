@@ -16,7 +16,7 @@ const Casas = () => {
             <div className="text-center flex flex-col items-center gap-30 justify-center">
               <img
                 className=" drop-shadow-[0_0_3px_#646464]"
-                src="/src/assets/icons/sion-santiago.png"
+                src="src/assets/icons/sion-santiago.png"
                 alt="Casa Sion Santiago"
                 width={70}
               />
@@ -33,7 +33,7 @@ const Casas = () => {
                   >
                     <img
                       className="opacity-40"
-                      src="/src/assets/icons/instagram.png"
+                      src="src/assets/icons/instagram.png"
                       alt="Instagram casa Santiago"
                       width={25}
                       height={25}
@@ -45,7 +45,7 @@ const Casas = () => {
                   >
                     <img
                       className=" opacity-40"
-                      src="/src/assets/icons/facebook.png"
+                      src="src/assets/icons/facebook.png"
                       alt="Facebook casa Santiago"
                       width={25}
                       height={25}
@@ -59,7 +59,7 @@ const Casas = () => {
             <div className="text-center flex flex-col items-center">
               <img
                 className="drop-shadow-[0_0_3px_#646464]"
-                src="/src/assets/icons/sion-rancagua.png"
+                src="src/assets/icons/sion-rancagua.png"
                 alt="Casa Sion Rancagua"
                 width={70}
               />
@@ -77,7 +77,7 @@ const Casas = () => {
                 >
                   <img
                     className=" opacity-40"
-                    src="/src/assets/icons/facebook.png"
+                    src="src/assets/icons/facebook.png"
                     alt="Instagram casa Rancagua"
                     width={25}
                     height={25}
@@ -90,7 +90,7 @@ const Casas = () => {
             <div className="text-center flex flex-col items-center">
               <img
                 className="drop-shadow-[0_0_3px_#646464]"
-                src="/src/assets/icons/sion-iquique.png"
+                src="src/assets/icons/sion-iquique.png"
                 alt="Casa Sion Iquique"
                 width={70}
               />
@@ -108,7 +108,7 @@ const Casas = () => {
                 >
                   <img
                     className="opacity-40"
-                    src="/src/assets/icons/instagram.png"
+                    src="src/assets/icons/instagram.png"
                     alt="Instagram casa Iquique"
                     width={25}
                     height={25}
@@ -120,7 +120,7 @@ const Casas = () => {
                 >
                   <img
                     className=" opacity-40"
-                    src="/src/assets/icons/facebook.png"
+                    src="src/assets/icons/facebook.png"
                     alt="Facebook casa Iquique"
                     width={25}
                     height={25}

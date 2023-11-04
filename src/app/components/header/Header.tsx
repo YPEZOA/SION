@@ -1,6 +1,8 @@
 import React from "react";
 import { colors } from "@/constants/colors";
 import { Link, useLocation } from "react-router-dom";
+import radioIcon from "src/assets/icons/radio7-logo.png";
+import hamburguer from "src/assets/icons/hamburger-icon.png";
 interface LinkProps {
   path: string;
   children: React.ReactNode;
@@ -46,7 +48,7 @@ const Header = () => {
           <a href="https://www.radio7fm.cl/" target="blank">
             <img
               className="cursor-pointer mb-1"
-              src="/src/assets/icons/radio7-logo.png"
+              src={radioIcon}
               alt="Radio7"
               width={100}
               height={0}
@@ -54,12 +56,7 @@ const Header = () => {
           </a>
         </div>
         <button className="block md:hidden">
-          <img
-            src="/src/assets/icons/hamburger-icon.png"
-            alt="Hamburguer Menu"
-            width={25}
-            height={12}
-          />
+          <img src={hamburguer} alt="Hamburguer Menu" width={25} height={12} />
         </button>
       </div>
     </nav>
