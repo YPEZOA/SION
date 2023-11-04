@@ -5,7 +5,7 @@ const Radio = () => {
     <div
       className="py-10 bg-[#1E1E1E] border-b-2 border-[#9FA3A9] bg-no-repeat bg-right bg-contain"
       style={{
-        backgroundImage: `url(/src/assets/images/lineas.png)`,
+        backgroundImage: `url(src/assets/images/lineas.png)`,
       }}
     >
       <SectionContainer styles="my-1 lg:px-32 flex flex-col md:flex-row text-center md:text-left justify-between items-center">
@@ -37,7 +37,7 @@ const Radio = () => {
               >
                 <img
                   className="cursor-pointer hover:opacity-70 duration-300"
-                  src="/src/assets/icons/playstore.png"
+                  src="src/assets/icons/playstore.png"
                   alt="Aplicacion Radio7 Android"
                   width={40}
                 />
@@ -48,7 +48,7 @@ const Radio = () => {
               >
                 <img
                   className="cursor-pointer mt-1 hover:opacity-70 duration-300"
-                  src="/src/assets/icons/appstore.png"
+                  src="src/assets/icons/appstore.png"
                   alt="Aplicacion Radio7 Apple"
                   width={28}
                 />
@@ -58,7 +58,7 @@ const Radio = () => {
         </div>
         <div className="mt-10 md:mt-0">
           <img
-            src="/src/assets/icons/radio7-logo.png"
+            src="src/assets/icons/radio7-logo.png"
             alt="Radio 7"
             width={350}
           />
