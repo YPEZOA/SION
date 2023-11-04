@@ -1,6 +1,7 @@
 import ElementDelay from "@/app/components/layouts/elements/ElementDelay";
 import contentBackground from "/first-content.webp";
 import { colors } from "@/constants/colors";
+import arrowDown from "src/assets/icons/arrow-down.png";
 
 const FirstContent = () => {
   return (
@@ -32,7 +33,7 @@ const FirstContent = () => {
         <ElementDelay delay={0.2}>
           <img
             className="pointer-events-none"
-            src="/arrow-down.png"
+            src={arrowDown}
             alt="Down page icon"
             width={50}
             height={26}

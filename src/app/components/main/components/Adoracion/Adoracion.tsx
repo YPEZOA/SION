@@ -1,11 +1,12 @@
 import HeadingAnimation from "@/app/components/layouts/elements/HeadingAnimation";
+import danzaImage from "/danza.webp";
 
 const Adoracion = () => {
   return (
     <section
       className="flex items-center h-[600px] bg-fixed backdrop-opacity-60"
       style={{
-        backgroundImage: "url('/danza.webp')",
+        backgroundImage: `url(${danzaImage})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
