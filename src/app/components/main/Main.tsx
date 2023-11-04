@@ -10,7 +10,7 @@ import Radio from "@/app/components/main/components/Radio/Radio";
 
 const Main = () => {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <FirstContent />
       <Vision />
       <Reuniones />
@@ -20,7 +20,7 @@ const Main = () => {
       <Servidores />
       <Contacto />
       <Radio />
-    </>
+    </div>
   );
 };
 
