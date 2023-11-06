@@ -15,12 +15,12 @@ const Casas = () => {
           <ElementDelay>
             <div className="text-center flex flex-col items-center gap-30 justify-center">
               <img
-                className=" drop-shadow-[0_0_3px_#646464]"
+                className="drop-shadow-[0_0_3px_#646464]"
                 src="src/assets/icons/sion-santiago.png"
                 alt="Casa Sion Santiago"
                 width={70}
               />
-              <span className="text-lg xl:text-2xl mt-1 block font-bold tracking-tighter text-gray-500">
+              <span className="text-lg xl:text-3xl mt-1 block font-bold tracking-tighter text-gray-500">
                 La Florida
               </span>
 
@@ -63,7 +63,7 @@ const Casas = () => {
                 alt="Casa Sion Rancagua"
                 width={70}
               />
-              <span className="text-lg xl:text-2xl mt-1 font-bold block tracking-tighter text-gray-500">
+              <span className="text-lg xl:text-3xl mt-1 font-bold block tracking-tighter text-gray-500">
                 Rancagua
               </span>
 
@@ -94,7 +94,7 @@ const Casas = () => {
                 alt="Casa Sion Iquique"
                 width={70}
               />
-              <span className="text-lg xl:text-2xl mt-1 block font-bold tracking-tighter text-gray-500">
+              <span className="text-lg xl:text-3xl mt-1 block font-bold tracking-tighter text-gray-500">
                 Iquique
               </span>
 
