@@ -1,7 +1,7 @@
 import ElementDelay from "@/app/components/layouts/elements/ElementDelay";
 import HeadingAnimation from "@/app/components/layouts/elements/HeadingAnimation";
 import SectionContainer from "@/app/components/layouts/elements/SectionContainer";
-import visionImage from "/image5.jpg";
+import visionImage from "src/assets/images/image5.jpg";
 
 const Vision = () => {
   return (

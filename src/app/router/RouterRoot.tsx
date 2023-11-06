@@ -11,6 +11,7 @@ export const RouterRoot = () => {
         <Route path="/" element={<Main />} />
         <Route path="/predicas" element={<Main />} />
         <Route path="/escuelas" element={<Main />} />
+        <Route path="/casas-avivamiento" element={<Main />} />
         <Route path="/contacto" element={<Main />} />
       </Routes>
       <Footer />

@@ -1,8 +1,9 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { colors } from "@/constants/colors";
-import radioIcon from "/radio7-logo.png";
-import hamburguer from "/hamburger-icon.png";
+import radioIcon from "src/assets/icons/radio7-logo.png";
+import hamburguer from "src/assets/icons/hamburger-icon.png";
+
 interface LinkProps {
   path: string;
   children: React.ReactNode;
@@ -44,6 +45,7 @@ const Header = () => {
         <div className="hidden md:flex gap-8 items-center">
           <Navlink path="/predicas">prédicas</Navlink>
           <Navlink path="/escuelas">escuelas</Navlink>
+          <Navlink path="/casas-avivamiento">casas de avivamiento</Navlink>
           <Navlink path="/contacto">contacto</Navlink>
           <a href="https://www.radio7fm.cl/" target="blank">
             <img

@@ -1,7 +1,7 @@
 import ElementDelay from "@/app/components/layouts/elements/ElementDelay";
-import contentBackground from "/first-content.webp";
 import { colors } from "@/constants/colors";
-import arrowDown from "@/assets/icons/arrow-down.png";
+import contentBackground from "src/assets/images/first-content.webp";
+import arrowDown from "src/assets/icons/arrow-down.png";
 
 const FirstContent = () => {
   return (

@@ -1,5 +1,5 @@
 import HeadingAnimation from "@/app/components/layouts/elements/HeadingAnimation";
-import danzaImage from "/danza.webp";
+import danzaImage from "src/assets/images/danza.webp";
 
 const Adoracion = () => {
   return (
