@@ -18,7 +18,7 @@ const Radio = () => {
             <div className="bg-[#E9791A] w-[190px] h-[5px] mt-2 rounded-full"></div>
           </h1>
           <p className="mt-1 tracking-tight font-light text-[#9FA3A9] md:pr-40">
-            Programacion "aviva la mañana"
+            Programacion "aviva la mañana", <small>desde las 7:00 hasta las 9:30AM</small>
             <span className="mb-10 font-bold text-[#D9D9D9] block">
               Dirigida por los hermanos Claudio y Jani
             </span>

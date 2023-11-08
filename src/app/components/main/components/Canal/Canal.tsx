@@ -5,7 +5,7 @@ import SectionContainer from "@/app/components/layouts/elements/SectionContainer
 const Canal = () => {
   return (
     <div
-      className="flex items-center md:h-[400px] bg-white mt-40"
+      className="flex items-center md:h-[400px] bg-white mt-20"
       style={{
         flex: 1,
         backgroundImage: "url('src/assets/images/sion.png')",

@@ -1,8 +1,9 @@
-import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { colors } from "@/constants/colors";
 import radioIcon from "src/assets/icons/radio7-logo.png";
 import hamburguer from "src/assets/icons/hamburger-icon.png";
+import { useMotionValueEvent, useScroll } from "framer-motion";
+import { useState } from "react";
 
 interface LinkProps {
   path: string;
@@ -28,8 +29,16 @@ const Navlink = ({ path, children }: LinkProps) => {
 };
 
 const Header = () => {
+  const [scrollYPosition, setScrollYPosition] = useState(0)
+  const { scrollY } = useScroll()
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    setScrollYPosition(latest)
+  })
+  const scrollNotMove = scrollYPosition < 200
+
   return (
-    <nav className="bg-[#1E1E1E]/50 backdrop-blur-sm fixed w-full z-10 h-14 flex items-center">
+    <nav style={{ height: scrollYPosition > 200 ? '4rem' : '6rem', backgroundColor: scrollNotMove ? 'rgba(30,30,30,0.40)' : 'rgba(30,30,30,0.78)' }} className="transition-all duration-500 fixed w-full z-10 flex items-center shadow-[0_0px_10px_#1E1E1E]">
       <div className="w-11/12 flex justify-between items-center mx-auto">
         <Link to="/">
           <div className="flex items-center transition ease-in-out delay-50 duration-300 hover:scale-105 cursor-pointer">
@@ -42,8 +51,7 @@ const Header = () => {
             <span className="text-white text-md font-bold ml-1 mt-2">SION</span>
           </div>
         </Link>
-        <div className="hidden md:flex gap-8 items-center">
-          <Navlink path="/predicas">prédicas</Navlink>
+        <div className="hidden lg:flex gap-8 items-center">
           <Navlink path="/escuelas">escuelas</Navlink>
           <Navlink path="/casas-avivamiento">casas de avivamiento</Navlink>
           <Navlink path="/contacto">contacto</Navlink>
@@ -57,7 +65,7 @@ const Header = () => {
             />
           </a>
         </div>
-        <button className="block md:hidden">
+        <button className="block lg:hidden">
           <img src={hamburguer} alt="Hamburguer Menu" width={25} height={12} />
         </button>
       </div>

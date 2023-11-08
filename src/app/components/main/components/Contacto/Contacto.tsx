@@ -10,7 +10,7 @@ const Contacto = () => {
 
   return (
     <section
-      className="bg-no-repeat bg-cover bg-right h-[300px] flex items-center justify-center my-40"
+      className="bg-no-repeat bg-cover bg-right h-[300px] flex items-center justify-center mt-20"
       style={{ backgroundImage: `url(${backgroundContact})` }}
     >
       <ElementDelay delay={0.2}>
@@ -19,7 +19,7 @@ const Contacto = () => {
             onClick={() => whatsappChating()}
             type="button"
             aria-label="Contacto Whatsapp"
-            className=" transition-all duration-200 uppercase hover:bg-[#00781A] text-white bg-[#00BD2A] py-2 px-5 rounded-full flex items-center gap-2"
+            className=" transition-all duration-200 uppercase hover:bg-[#00781A] text-white bg-[#00BD2A] py-2 px-5 rounded-full flex items-center justify-center gap-2"
           >
             <img
               src="src/assets/icons/whatsapp-icon.png"

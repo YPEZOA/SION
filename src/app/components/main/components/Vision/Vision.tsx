@@ -2,7 +2,7 @@ import ElementDelay from "@/app/components/layouts/elements/ElementDelay";
 import HeadingAnimation from "@/app/components/layouts/elements/HeadingAnimation";
 import SectionContainer from "@/app/components/layouts/elements/SectionContainer";
 
-import visionImage from "src/assets/images/image5.jpg";
+import visionImage from "src/assets/images/vision-image.png";
 
 const Vision = () => {
   return (
@@ -12,10 +12,10 @@ const Vision = () => {
           nuestra <span className="font-extrabold">visión</span>
         </h1>
       </HeadingAnimation>
-      <div className="flex bg-white">
+      <div className="flex flex-col lg:flex-row md:flex-col-reverse bg-white">
         <SectionContainer styles="flex flex-col gap-20">
           <ElementDelay>
-            <p className="text-[#656565]">
+            <p className="text-[#656565] text-center md:text-left">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad miLorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -39,14 +39,9 @@ const Vision = () => {
           </ElementDelay>
         </SectionContainer>
         <div
+          className="hidden md:block bg-fixed bg-no-repeat bg-contain bg-right w-full min-h-screen md:h-80"
           style={{
-            backgroundAttachment: "fixed",
             backgroundImage: `url(${visionImage})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "contain",
-            backgroundPosition: "right",
-            width: "100%",
-            minHeight: "90vh",
           }}
         ></div>
       </div>

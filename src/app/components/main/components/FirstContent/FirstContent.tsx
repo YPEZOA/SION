@@ -14,7 +14,7 @@ const FirstContent = () => {
         backgroundPosition: "center center",
       }}
     >
-      <div className="flex flex-col items-center pb-10 md:pb-10">
+      <div className="flex flex-col items-center pb-20 md:pb-10">
         <ElementDelay
           delay={0.5}
           styles="mb-10 md:mb-32 text-white text-center"

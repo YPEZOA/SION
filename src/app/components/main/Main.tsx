@@ -10,17 +10,17 @@ import Radio from "@/app/components/main/components/Radio/Radio";
 
 const Main = () => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <>
       <FirstContent />
       <Vision />
       <Reuniones />
       <Adoracion />
       <Casas />
       <Canal />
-      <Servidores />
       <Contacto />
+      <Servidores />
       <Radio />
-    </div>
+    </>
   );
 };
 
