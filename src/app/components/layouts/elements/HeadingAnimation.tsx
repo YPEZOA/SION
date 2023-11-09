@@ -1,6 +1,6 @@
-import { useEffect } from "react";
-import { useAnimation, motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { useEffect } from 'react';
+import { useAnimation, motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 interface Props {
   children?: React.ReactNode;
@@ -8,11 +8,7 @@ interface Props {
   hasBackground?: boolean;
 }
 
-const HeadingAnimation = ({
-  children,
-  styles,
-  hasBackground = false,
-}: Props) => {
+const HeadingAnimation = ({ children, styles, hasBackground = false }: Props) => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
 
@@ -23,19 +19,17 @@ const HeadingAnimation = ({
 
   useEffect(() => {
     if (inView) {
-      controls.start("visible");
+      controls.start('visible');
     }
   }, [controls, inView]);
 
   return (
-    <div
-      className={`${hasBackground ? "bg-[#1E1E1E]" : ""} px-5 lg:px-20 py-4`}
-    >
+    <div className={`${hasBackground ? 'bg-[#1E1E1E]' : ''} px-5 lg:px-20 py-4`}>
       <motion.div
         className={`${styles}`}
         variants={elementVariants}
         ref={ref}
-        initial="hidden"
+        initial='hidden'
         animate={controls}
       >
         {children}

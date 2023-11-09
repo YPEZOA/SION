@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import React, { useEffect } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 interface Props {
   delay?: number;
@@ -14,7 +14,7 @@ const ElementDelay = ({ delay = 0.5, children, styles }: Props) => {
 
   useEffect(() => {
     if (inView) {
-      controls.start("visible");
+      controls.start('visible');
     }
   }, [controls, inView]);
 
@@ -28,7 +28,7 @@ const ElementDelay = ({ delay = 0.5, children, styles }: Props) => {
       ref={ref}
       className={styles}
       variants={elementVariants}
-      initial="hidden"
+      initial='hidden'
       animate={controls}
     >
       {children}

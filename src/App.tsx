@@ -1,4 +1,4 @@
-import { RouterRoot } from "./app/router/RouterRoot";
+import { RouterRoot } from './app/router/RouterRoot';
 
 const App = () => {
   return <RouterRoot />;

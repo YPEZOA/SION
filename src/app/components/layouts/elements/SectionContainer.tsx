@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 interface Props {
   children: React.ReactNode;
@@ -8,10 +8,7 @@ interface Props {
 
 const SectionContainer = ({ children, styles, props }: Props) => {
   return (
-    <section
-      className={`container px-5 my-20 md:px-20 ${styles ? styles : ""}`}
-      {...props}
-    >
+    <section className={`container px-5 my-20 md:px-20 ${styles ? styles : ''}`} {...props}>
       {children}
     </section>
   );
