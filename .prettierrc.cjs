@@ -1,12 +1,11 @@
-module.exports =
-{
+module.exports = {
   jsxSingleQuote: true,
   singleQuote: true,
-  semi: true,
+  semi: false,
   tabWidth: 2,
-  trailingComma: "all",
+  trailingComma: 'all',
   printWidth: 100,
   bracketSameLine: false,
-  arrowParens: "always",
-  endOfLine: "lf"
-}
+  arrowParens: 'always',
+  endOfLine: 'lf',
+};
