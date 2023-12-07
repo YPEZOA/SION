@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <footer className='py-10 bg-[#1E1E1E]'>
-      <SectionContainer styles='md:px-32 flex justify-between items-center my-1'>
+      <SectionContainer styles='md:px-32 flex flex-col gap-10 md:flex-row md:justify-between items-start md:items-center my-1'>
         <div className='flex flex-col'>
           <h1 className='text-[#F9F9F9] font-extrabold tracking-tighter text-3xl mb-5'>
             Casa Sion Santiago

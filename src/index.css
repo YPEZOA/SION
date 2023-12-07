@@ -1,11 +1,57 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300&family=Poppins:wght@300;400;500;600&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: #f9f9f9;
-  font-family: "Poppins", sans-serif;
+:root,
+#root,
+#docs-root {
+  --semi-bold: 'PoppinsSemiBold';
+  --bold: 'PoppinsBold';
+  --regular: 'PoppinsRegular';
+  --extra-light: 'PoppinsExtralight';
 }
 
+@font-face {
+  font-family: 'OhBaby';
+  src:
+    local('OhBaby'),
+    url('./assets/fonts/ohbaby.ttf') format('truetype');
+  font-display: swap;
+}
 
+@font-face {
+  font-family: 'PoppinsRegular';
+  src:
+    local('PoppinsRegular'),
+    url('./assets/fonts/Poppins-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PoppinsExtralight';
+  src:
+    local('PoppinsExtralight'),
+    url('./assets/fonts/Poppins-ExtraLight.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PoppinsBold';
+  src:
+    local('PoppinsBold'),
+    url('./assets/fonts/Poppins-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PoppinsSemiBold';
+  src:
+    local('PoppinsSemiBold'),
+    url('./assets/fonts/Poppins-SemiBold.ttf') format('truetype');
+  font-display: swap;
+}
+
+body {
+  background-color: #f9f9f9;
+  font-family: 'PoppinsRegular', sans-serif;
+}

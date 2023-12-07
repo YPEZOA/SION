@@ -1,18 +1,18 @@
-import { useState } from 'react';
-import { useMotionValueEvent, useScroll } from 'framer-motion';
-import { Link, useLocation } from 'react-router-dom';
-import { colors } from '@/constants/colors';
-import radioIcon from 'src/assets/icons/radio7-logo.png';
-import hamburguer from 'src/assets/icons/hamburger-icon.png';
+import { useState } from 'react'
+import { useMotionValueEvent, useScroll } from 'framer-motion'
+import { Link, useLocation } from 'react-router-dom'
+import { colors } from '@/constants/colors'
+import radioIcon from 'src/assets/icons/radio7-logo.png'
+import hamburguer from 'src/assets/icons/hamburger-icon.png'
 
 interface LinkProps {
-  path: string;
-  children: React.ReactNode;
+  path: string
+  children: React.ReactNode
 }
 
 const Navlink = ({ path, children }: LinkProps) => {
-  const { pathname } = useLocation();
-  const pathMatched = path === pathname;
+  const { pathname } = useLocation()
+  const pathMatched = path === pathname
 
   return (
     <Link
@@ -30,17 +30,17 @@ const Navlink = ({ path, children }: LinkProps) => {
         style={{ backgroundColor: colors.primary }}
       ></div>
     </Link>
-  );
-};
+  )
+}
 
 const Header = () => {
-  const [scrollYPosition, setScrollYPosition] = useState(0);
-  const { scrollY } = useScroll();
+  const [scrollYPosition, setScrollYPosition] = useState(0)
+  const { scrollY } = useScroll()
 
-  useMotionValueEvent(scrollY, 'change', (latest) => {
-    setScrollYPosition(latest);
-  });
-  const scrollNotMove = scrollYPosition < 200;
+  useMotionValueEvent(scrollY, 'change', latest => {
+    setScrollYPosition(latest)
+  })
+  const scrollNotMove = scrollYPosition < 200
 
   return (
     <nav
@@ -53,7 +53,13 @@ const Header = () => {
       <div className='w-11/12 flex justify-between items-center mx-auto'>
         <Link to='/'>
           <div className='flex items-center transition ease-in-out delay-50 duration-300 hover:scale-105 cursor-pointer'>
-            <img className='md:w-[35px]' src='/logoSion.png' alt='Sion Logo' width={30} />
+            <img
+              className='md:w-[35px]'
+              src='/logoSion.png'
+              alt='Sion Logo'
+              width={30}
+              height={30}
+            />
             <span className='text-white text-md font-bold ml-1 mt-2'>SION</span>
           </div>
         </Link>
@@ -76,7 +82,7 @@ const Header = () => {
         </button>
       </div>
     </nav>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

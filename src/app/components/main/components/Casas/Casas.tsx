@@ -1,11 +1,11 @@
-import ElementDelay from '@/app/components/layouts/elements/ElementDelay';
-import HeadingAnimation from '@/app/components/layouts/elements/HeadingAnimation';
-import SectionContainer from '@/app/components/layouts/elements/SectionContainer';
+import ElementDelay from '@/app/components/layouts/elements/ElementDelay'
+import HeadingAnimation from '@/app/components/layouts/elements/HeadingAnimation'
+import SectionContainer from '@/app/components/layouts/elements/SectionContainer'
 
 const Casas = () => {
   return (
     <>
-      <HeadingAnimation hasBackground styles='leading-3'>
+      <HeadingAnimation hasBackground>
         <h1 className='font-thin tracking-[2px] text-3xl md:text-4xl uppercase text-[#F9F9F9]'>
           nuestra <span className='font-extrabold'>red</span>
         </h1>
@@ -117,7 +117,7 @@ const Casas = () => {
         </div>
       </SectionContainer>
     </>
-  );
-};
+  )
+}
 
-export default Casas;
+export default Casas

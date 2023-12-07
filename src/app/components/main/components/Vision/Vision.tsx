@@ -1,8 +1,8 @@
-import ElementDelay from '@/app/components/layouts/elements/ElementDelay';
-import HeadingAnimation from '@/app/components/layouts/elements/HeadingAnimation';
-import SectionContainer from '@/app/components/layouts/elements/SectionContainer';
+import ElementDelay from '@/app/components/layouts/elements/ElementDelay'
+import HeadingAnimation from '@/app/components/layouts/elements/HeadingAnimation'
+import SectionContainer from '@/app/components/layouts/elements/SectionContainer'
 
-import visionImage from 'src/assets/images/vision-image.png';
+import visionImage from 'src/assets/images/vision-image.webp'
 
 const Vision = () => {
   return (
@@ -56,7 +56,7 @@ const Vision = () => {
         ></div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Vision;
+export default Vision
