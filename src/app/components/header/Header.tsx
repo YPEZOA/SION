@@ -1,9 +1,11 @@
-import { useState } from 'react'
-import { useMotionValueEvent, useScroll } from 'framer-motion'
 import { Link, useLocation } from 'react-router-dom'
 import { colors } from '@/constants/colors'
-import radioIcon from 'src/assets/icons/radio7-logo.png'
-import hamburguer from 'src/assets/icons/hamburger-icon.png'
+import InstaIcon from '@/app/UI/icons/Instagram'
+import FaceIcon from '@/app/UI/icons/FaceIcon'
+import YoutubeIcon from '@/app/UI/icons/YoutubeIcon'
+import ElementDelay from '../layouts/elements/ElementDelay'
+import HamburguerMenu from '@/app/UI/icons/Hamburguer'
+import SionIcon from '@/app/UI/icons/SionIcon'
 
 interface LinkProps {
   path: string
@@ -19,14 +21,14 @@ const Navlink = ({ path, children }: LinkProps) => {
       style={{
         transition: 'all .5s ease',
       }}
-      className='group text-white font-medium text-md uppercase  mx-4 rounded-md p-3 hover:underline-offset-8'
+      className='group text-white text-[18px] rounded-md hover:underline-offset-8 font-regular'
       to={path}
     >
       {children}
       <div
-        className={`block w-0 group-hover:w-9/12 ${
-          pathMatched && 'w-9/12'
-        } transition-all duration-300 delay-100 h-0.5 rounded-full`}
+        className={` ${
+          pathMatched && 'w-7/12'
+        } block w-0 group-hover:w-7/12 transition-all duration-300 delay-100 h-0.5 rounded-full`}
         style={{ backgroundColor: colors.primary }}
       ></div>
     </Link>
@@ -34,53 +36,60 @@ const Navlink = ({ path, children }: LinkProps) => {
 }
 
 const Header = () => {
-  const [scrollYPosition, setScrollYPosition] = useState(0)
-  const { scrollY } = useScroll()
-
-  useMotionValueEvent(scrollY, 'change', latest => {
-    setScrollYPosition(latest)
-  })
-  const scrollNotMove = scrollYPosition < 200
-
   return (
-    <nav
-      style={{
-        height: scrollYPosition > 200 ? '4rem' : '6rem',
-        backgroundColor: scrollNotMove ? 'rgba(30,30,30,0.40)' : 'rgba(30,30,30,0.78)',
-      }}
-      className='transition-all duration-500 fixed w-full z-10 flex items-center shadow-[0_0px_10px_#1E1E1E]'
-    >
-      <div className='w-11/12 flex justify-between items-center mx-auto'>
-        <Link to='/'>
-          <div className='flex items-center transition ease-in-out delay-50 duration-300 hover:scale-105 cursor-pointer'>
-            <img
-              className='md:w-[35px]'
-              src='/logoSion.png'
-              alt='Sion Logo'
-              width={30}
-              height={30}
-            />
-            <span className='text-white text-md font-bold ml-1 mt-2'>SION</span>
-          </div>
-        </Link>
-        <div className='hidden lg:flex gap-8 items-center'>
-          <Navlink path='/escuelas'>escuelas</Navlink>
-          <Navlink path='/casas-avivamiento'>casas de avivamiento</Navlink>
-          <Navlink path='/contacto'>contacto</Navlink>
-          <a href='https://www.radio7fm.cl/' target='blank'>
-            <img
-              className='cursor-pointer mb-1'
-              src={radioIcon}
-              alt='Radio7'
-              width={100}
-              height={0}
-            />
-          </a>
+    <nav className='absolute w-full z-20'>
+      {/* RRSS section */}
+      <div className='flex items-center bg-primary h-[55px]'>
+        <div className='w-11/12 xl:w-10/12 mx-auto '>
+          <ElementDelay motionless={false} delay={0.3} styles='flex justify-between items-center'>
+            <a href='https://www.radio7fm.cl/' target='blank'>
+              <img
+                src='src/assets/icons/radio7-logo.png'
+                alt='Logo radio7'
+                width={100}
+                height={100}
+              />
+            </a>
+            <div className='flex items-center gap-1'>
+              <a href='https://www.instagram.com/casa_sion_santiago_/' target='blank'>
+                <InstaIcon />
+              </a>
+              <a href='https://www.facebook.com/CasaSionSantiagoo' target='blank'>
+                <FaceIcon />
+              </a>
+              <a href='https://www.youtube.com/@CasaSionSantiago' target='blank'>
+                <YoutubeIcon />
+              </a>
+            </div>
+          </ElementDelay>
         </div>
-        <button className='block lg:hidden'>
-          <img src={hamburguer} alt='Hamburguer Menu' width={25} height={12} />
-        </button>
       </div>
+
+      {/* Route Links */}
+      <ElementDelay motionless={false} delay={0.3}>
+        <div className='w-11/12 xl:w-10/12 mx-auto py-8 border-b border-white'>
+          <div className='hidden lg:flex items-center justify-between'>
+            <div className='flex gap-10'>
+              <Navlink path='/'>Inicio</Navlink>
+              <Navlink path='/casas-avivamiento'>Casas de avivamiento</Navlink>
+            </div>
+            <Link to='/' className='mr-20'>
+              <div className='flex items-center transition ease-in-out delay-50 duration-300 hover:scale-95 cursor-pointer'>
+                <SionIcon />
+                <span className='text-white text-xl ml-1 mt-2'>Sion Santiago</span>
+              </div>
+            </Link>
+
+            <div className='flex gap-10'>
+              <Navlink path='/escuelas'>Escuelas</Navlink>
+              <Navlink path='/contacto'>Contacto</Navlink>
+            </div>
+          </div>
+          <button className='block lg:hidden'>
+            <HamburguerMenu />
+          </button>
+        </div>
+      </ElementDelay>
     </nav>
   )
 }

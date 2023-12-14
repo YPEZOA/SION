@@ -1,17 +1,17 @@
-import React from 'react';
+import React from 'react'
 
 interface Props {
-  children: React.ReactNode;
-  styles?: string;
-  props?: any;
+  children: React.ReactNode
+  styles?: string
+  props?: any
 }
 
 const SectionContainer = ({ children, styles, props }: Props) => {
   return (
-    <section className={`container px-5 my-20 md:px-20 ${styles ? styles : ''}`} {...props}>
+    <section className={`container w-11/12 xl:w-10/12 py-32  ${styles ? styles : ''}`} {...props}>
       {children}
     </section>
-  );
-};
+  )
+}
 
-export default SectionContainer;
+export default SectionContainer

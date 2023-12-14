@@ -1,42 +1,31 @@
-import ElementDelay from '@/app/components/layouts/elements/ElementDelay';
-import { colors } from '@/constants/colors';
-import contentBackground from 'src/assets/images/first-content.webp';
-import arrowDown from 'src/assets/icons/arrow-down.png';
+import ElementDelay from '@/app/components/layouts/elements/ElementDelay'
+import contentBackground from 'src/assets/images/first-content.png'
+import ArrowDown from '@/app/UI/icons/ArrowDown'
 
 const FirstContent = () => {
   return (
     <section
-      className='min-h-screen flex flex-col items-center justify-end md:h-[758px]'
+      className='h-screen bg-no-repeat bg-cover bg-center'
       style={{
         backgroundImage: `url(${contentBackground})`,
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center center',
       }}
     >
-      <div className='flex flex-col items-center pb-20 md:pb-10'>
-        <ElementDelay delay={0.5} styles='mb-10 md:mb-32 text-white text-center'>
-          <p className='font-thin text-4xl md:text-8xl tracking-tighter drop-shadow-[2px_0_2px_#000]'>
-            Red Casa <span className='font-black'>Sion</span>
-          </p>
-          <p className='mt-5 px-5 drop-shadow-[3px_0_1px_#000]'>
+      <div className='flex flex-col items-center justify-between h-full'>
+        <div></div>
+        <ElementDelay delay={0.2} styles='text-white text-center'>
+          <p className='text-3xl md:text-5xl w-11/12 lg:w-8/12 mx-auto mt-40 font-semibold'>
+            <div className='h-1 bg-white mb-14 w-1/6 mx-auto'></div>
             Para los hombres es imposible, más para Dios todo es posible.
             <br />
-            <span style={{ color: colors.orangeSecondary500 }}>Mateo 19:26</span>
+            <span className='text-sm text-primary'>Mateo 19:26</span>
           </p>
         </ElementDelay>
-        <ElementDelay delay={0.2}>
-          <img
-            className='pointer-events-none'
-            src={arrowDown}
-            alt='Down page icon'
-            width={50}
-            height={26}
-          />
+        <ElementDelay delay={0.6}>
+          <ArrowDown />
         </ElementDelay>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default FirstContent;
+export default FirstContent

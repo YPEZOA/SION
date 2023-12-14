@@ -12,14 +12,6 @@
 }
 
 @font-face {
-  font-family: 'OhBaby';
-  src:
-    local('OhBaby'),
-    url('./assets/fonts/ohbaby.ttf') format('truetype');
-  font-display: swap;
-}
-
-@font-face {
   font-family: 'PoppinsRegular';
   src:
     local('PoppinsRegular'),
@@ -52,6 +44,6 @@
 }
 
 body {
-  background-color: #f9f9f9;
-  font-family: 'PoppinsRegular', sans-serif;
+  background-color: #fff;
+  font-family: 'PoppinsRegular', Arial, Helvetica, sans-serif;
 }

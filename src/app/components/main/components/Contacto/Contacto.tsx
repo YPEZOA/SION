@@ -1,12 +1,12 @@
-import ElementDelay from '@/app/components/layouts/elements/ElementDelay';
-import SectionContainer from '@/app/components/layouts/elements/SectionContainer';
-import backgroundContact from 'src/assets/images/background-contact.webp';
+import ElementDelay from '@/app/components/layouts/elements/ElementDelay'
+import SectionContainer from '@/app/components/layouts/elements/SectionContainer'
+import backgroundContact from 'src/assets/images/background-contact.webp'
 
 const Contacto = () => {
   const whatsappChating = () => {
-    const url = 'https://wa.me/56920071717';
-    window.open(url);
-  };
+    const url = 'https://wa.me/56920071717'
+    window.open(url)
+  }
 
   return (
     <section
@@ -31,7 +31,7 @@ const Contacto = () => {
         </SectionContainer>
       </ElementDelay>
     </section>
-  );
-};
+  )
+}
 
-export default Contacto;
+export default Contacto

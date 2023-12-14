@@ -12,6 +12,21 @@ export default {
         extralight: 'var(--extra-light)',
         regular: 'var(--regular)',
       },
+      backgroundColor: {
+        primary: '#239595',
+        secondary: '#4C4B63',
+        neutral_light: '#F9F9F9',
+      },
+      colors: {
+        primary: '#239595',
+        secondary: '#4C4B63',
+      },
+      borderWidth: {
+        DEFAULT: '1px',
+      },
+      fontSize: {
+        DEFAULT: '18px',
+      },
     },
   },
   plugins: [],

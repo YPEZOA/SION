@@ -1,61 +1,60 @@
+import PlusIcon from '@/app/UI/icons/PlusIcon'
 import ElementDelay from '@/app/components/layouts/elements/ElementDelay'
-import HeadingAnimation from '@/app/components/layouts/elements/HeadingAnimation'
 import SectionContainer from '@/app/components/layouts/elements/SectionContainer'
-
-import visionImage from 'src/assets/images/vision-image.webp'
 
 const Vision = () => {
   return (
-    <>
-      <HeadingAnimation hasBackground>
-        <h1 className='font-thin tracking-[5px] text-2xl md:text-4xl uppercase text-[#F9F9F9]'>
-          nuestra <span className='font-extrabold'>visión</span>
-        </h1>
-      </HeadingAnimation>
-      <div className='flex flex-col lg:flex-row md:flex-col-reverse bg-white'>
-        <SectionContainer styles='flex flex-col gap-20'>
-          <ElementDelay>
-            <p className='text-[#656565] text-center md:text-left'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad miLorem ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua. Ut enim ad miLorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mi ,
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua. Ut enim ad mi , consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad
-            </p>
-          </ElementDelay>
+    <SectionContainer>
+      <ElementDelay delay={0.3}>
+        <article className='flex flex-col md:flex-row w-full gap-8'>
+          {/* Images */}
+          <div className='w-full md:w-[50%] flex gap-5'>
+            <div className='flex items-center'>
+              <img src='src/assets/images/vision-image1.png' alt='Evangelización' />
+            </div>
+            <div className='flex flex-col justify-between'>
+              <img src='src/assets/images/vision-image2.png' alt='Afirmar' />
+              <img src='src/assets/images/vision-image3.png' alt='Discipular' />
+            </div>
+          </div>
 
-          <ElementDelay>
-            <ul className='flex flex-col gap-4'>
-              <li className='flex gap-4 items-center'>
-                <img src='src/assets/icons/plus-icon.png' alt='Plus Icon' width={20} height={20} />
-                <span className='tracking-wider font-bold'>Evangelizar</span>
-              </li>
-              <li className='flex gap-4 items-center'>
-                <img src='src/assets/icons/plus-icon.png' alt='Plus Icon' width={20} height={20} />
-                <span className='tracking-wider font-bold'>Afirmar</span>
-              </li>
-              <li className='flex gap-4 items-center'>
-                <img src='src/assets/icons/plus-icon.png' alt='Plus Icon' width={20} height={20} />
-                <span className='tracking-wider font-bold'>Discipular</span>
-              </li>
-              <li className='flex gap-4 items-center'>
-                <img src='src/assets/icons/plus-icon.png' alt='Plus Icon' width={20} height={20} />
-                <span className='tracking-wider font-bold'>Enviar</span>
-              </li>
-            </ul>
-          </ElementDelay>
-        </SectionContainer>
-        <div
-          className='hidden md:block bg-fixed bg-no-repeat bg-contain bg-right w-full min-h-screen md:h-80'
-          style={{
-            backgroundImage: `url(${visionImage})`,
-          }}
-        ></div>
-      </div>
-    </>
+          {/* Information */}
+          <div className='w-full gap-8 md:gap-0 md:w-[50%] xl:w-[40%] flex flex-col justify-between '>
+            <header className='text-2xl font-semibold'>
+              <div className='w-[180px] bg-primary block h-[3px] rounded-full mb-10'></div>
+              Lorem ipsum dolor sit amet, conse enim ad miLorem{' '}
+            </header>
+            <main className='text-secondary xl:text-lg'>
+              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad miLorem ipsum dolor sit amet,
+              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab”
+            </main>
+            <div className='flex gap-4'>
+              <div className='flex flex-col gap-5'>
+                <div className='flex items-center gap-2'>
+                  <PlusIcon />
+                  <span className='text-secondary font-semibold'>Evangelizar</span>
+                </div>
+                <div className='flex items-center gap-2'>
+                  <PlusIcon />
+                  <span className='text-secondary font-semibold'>Discipular</span>
+                </div>
+              </div>
+              <div className='flex flex-col gap-5'>
+                <div className='flex items-center gap-2'>
+                  <PlusIcon />
+                  <span className='text-secondary font-semibold'>Afirmar</span>
+                </div>
+                <div className='flex items-center gap-2'>
+                  <PlusIcon />
+                  <span className='text-secondary font-semibold'>Enviar</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </ElementDelay>
+    </SectionContainer>
   )
 }
 
