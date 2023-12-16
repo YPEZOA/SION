@@ -19,24 +19,34 @@ const Button: React.FunctionComponent<ButtonProps> = ({
   customStyles = '',
   onClickEvent,
 }) => {
-  const defaultStyles = 'rounded-[5px] py-5 px-10'
-  const matchStyled = customStyles ? customStyles : defaultStyles
+  const defaultStyles = 'rounded-[5px] py-4 px-10'
+
+  const renderContent = () => {
+    if (!!icon && text?.length)
+      return (
+        <div className='flex gap-5 items-center'>
+          <span>{icon}</span>
+          <p>{text}</p>
+        </div>
+      )
+    return text || icon
+  }
 
   return (
     <button
       onClick={onClickEvent}
       type='button'
       aria-labelledby={accesibilityLabel}
-      className={` transition-all duration-75 uppercase  
+      className={` transition-all duration-75 uppercase hover:scale-95
     ${backgroundColor ? backgroundColor : ''} 
     ${border ? 'border-[1px] border-[#4C4B63]' : ''} 
     ${
       border && !backgroundColor?.length
         ? 'hover:bg-primary hover:border-transparent hover:text-white'
         : ''
-    } ${matchStyled}`}
+    } ${defaultStyles} ${customStyles}`}
     >
-      {icon ? icon : text}
+      {renderContent()}
     </button>
   )
 }

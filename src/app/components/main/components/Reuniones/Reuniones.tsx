@@ -9,8 +9,8 @@ const Reuniones = () => {
       <SectionContainer>
         <ElementDelay>
           <header className='text-center'>
-            <small className='uppercase text-primary text-[18px]'>reuniones</small>
-            <h1 className='text-semibold mt-2 text-2xl lg:w-5/12 mx-auto'>
+            <span className='uppercase text-primary font-semibold'>reuniones</span>
+            <h1 className='font-semibold mt-2 text-2xl lg:w-5/12 mx-auto'>
               Hay tiempo para todo lo que se hace bajo el cielo
             </h1>
           </header>
