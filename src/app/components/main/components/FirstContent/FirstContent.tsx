@@ -14,7 +14,7 @@ const FirstContent = () => {
         <div></div>
         <ElementDelay delay={0.2} styles='text-white text-center'>
           <p className='text-3xl md:text-5xl w-11/12 lg:w-8/12 mx-auto mt-40 font-semibold'>
-            <div className='h-1 bg-white mb-14 w-1/6 mx-auto'></div>
+            <span className='h-1 bg-white mb-14 w-1/6 mx-auto'></span>
             Para los hombres es imposible, más para Dios todo es posible.
             <br />
             <span className='text-sm text-primary'>Mateo 19:26</span>
