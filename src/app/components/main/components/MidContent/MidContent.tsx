@@ -14,7 +14,7 @@ const MidContent = () => {
       >
         <article className='absolute  bottom-[-20%] bg-white lg:w-9/12 xl:w-8/12 min-h-[280px] py-10 px-4 lg:py-20 lg:px-24 rounded-[5px] shadow-[0px_0px_10px_rgba(0,0,0,0.3)] border-[2px] border-[#D9D9D9]'>
           <ElementDelay>
-            <div className='flex flex-col md:flex-row divide-y-2 md:divide-x-2 justify-between'>
+            <div className='flex flex-col md:flex-row lg:divide-x-2 justify-between'>
               <div className='flex flex-col md:pr-20'>
                 <h1 className='text-2xl font-semibold'>¿Tienes dudas o necesitas consejería?</h1>
                 <span className='text-secondary mt-3'>No dudes en escribirnos</span>

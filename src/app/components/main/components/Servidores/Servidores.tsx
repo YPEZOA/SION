@@ -22,7 +22,10 @@ const Servidores = () => {
             height={360}
           />
         </ElementDelay>
-        <ElementDelay delay={0.5} styles='flex flex-col justify-between md:w-[40%] xl:w-[50%]'>
+        <ElementDelay
+          delay={0.5}
+          styles='flex flex-col gap-8 justify-between md:w-[40%] xl:w-[50%]'
+        >
           <header className='font-semibold text-2xl'>
             <div className='w-[180px] bg-primary block h-[3px] rounded-full mb-10'></div>
             Porque el hijo del hombre no vino para ser servido, sino para servir, y para dar su vida

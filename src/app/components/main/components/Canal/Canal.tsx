@@ -20,7 +20,7 @@ const Canal = () => {
             <h1>h1</h1>
           </div>
         </ElementDelay>
-        <ElementDelay styles='flex flex-col justify-between'>
+        <ElementDelay styles='flex flex-col gap-8 justify-between'>
           <span className='text-2xl font-semibold'>
             <div className='w-[120px] bg-primary block h-[3px] rounded-full mb-10'></div>
             Domingos de gloria!
