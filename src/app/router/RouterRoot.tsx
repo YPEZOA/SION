@@ -22,16 +22,21 @@ export const RouterRoot = () => {
           <Route path='/escuelas' element={<Escuelas />} />
           <Route path='/contacto' element={<Main />} />
         </Routes>
-        {scrollPosition >= 1000 && (
+
+        <div
+          className={`${
+            scrollPosition >= 1000 ? 'block' : 'opacity-0 pointer-events-none'
+          } transition-all right-4 bottom-5 md:right-10 md:bottom-20 fixed bg-primary rounded-full p-2 hover:scale-95 z-20`}
+        >
           <button
+            className='align-middle'
             onClick={() => window.scrollTo(0, 0)}
-            className='right-4 bottom-5 md:right-10 md:bottom-20 fixed bg-primary rounded-full p-2 hover:scale-95'
             type='button'
-            aria-labelledby='Scroll al inicio'
+            aria-label='Scroll al inicio'
           >
             <ArrowUpScroll />
           </button>
-        )}
+        </div>
       </div>
       <Footer />
     </BrowserRouter>

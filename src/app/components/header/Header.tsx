@@ -48,7 +48,7 @@ const Header = () => {
       <div className={`${defaultPath ? 'bg-primary' : 'bg-secondary'} flex items-center h-[55px]`}>
         <div className='w-11/12 xl:w-10/12 mx-auto '>
           <ElementDelay motionless={false} delay={0.3} styles='flex justify-between items-center'>
-            <a href='https://www.radio7fm.cl/' target='blank'>
+            <a href='https://www.radio7fm.cl/' target='blank' aria-label='Radio7'>
               <img
                 src='src/assets/icons/radio7-logo.png'
                 alt='Logo radio7'
@@ -57,13 +57,25 @@ const Header = () => {
               />
             </a>
             <div className='flex items-center gap-1'>
-              <a href='https://www.instagram.com/casa_sion_santiago_/' target='blank'>
+              <a
+                href='https://www.instagram.com/casa_sion_santiago_/'
+                target='blank'
+                aria-label='Instagram'
+              >
                 <InstaIcon />
               </a>
-              <a href='https://www.facebook.com/CasaSionSantiagoo' target='blank'>
+              <a
+                href='https://www.facebook.com/CasaSionSantiagoo'
+                target='blank'
+                aria-label='Facebook'
+              >
                 <FaceIcon />
               </a>
-              <a href='https://www.youtube.com/@CasaSionSantiago' target='blank'>
+              <a
+                href='https://www.youtube.com/@CasaSionSantiago'
+                target='blank'
+                aria-label='Youtube'
+              >
                 <YoutubeIcon />
               </a>
             </div>

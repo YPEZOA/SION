@@ -5,7 +5,7 @@ import SectionContainer from '@/app/components/layouts/elements/SectionContainer
 const Casas = () => {
   return (
     <>
-      <HeadingAnimation hasBackground>
+      <HeadingAnimation>
         <h1 className='font-thin tracking-[2px] text-3xl md:text-4xl uppercase text-[#F9F9F9]'>
           nuestra <span className='font-extrabold'>red</span>
         </h1>
@@ -27,7 +27,11 @@ const Casas = () => {
               <h1 className='text-lg tracking-tighter text-gray-500 leading-7 xl:text-1xl'>
                 Dr. Sotero Del Río #77
                 <div className='flex justify-center mt-1 gap-2'>
-                  <a href='https://www.instagram.com/casa_sion_santiago_/' target='blank'>
+                  <a
+                    href='https://www.instagram.com/casa_sion_santiago_/'
+                    target='blank'
+                    aria-label='Instagram'
+                  >
                     <img
                       className='opacity-40'
                       src='src/assets/icons/instagram.png'
@@ -36,7 +40,11 @@ const Casas = () => {
                       height={25}
                     />
                   </a>
-                  <a href='https://www.facebook.com/CasaSionSantiagoo' target='blank'>
+                  <a
+                    href='https://www.facebook.com/CasaSionSantiagoo'
+                    target='blank'
+                    aria-label='Facebook'
+                  >
                     <img
                       className=' opacity-40'
                       src='src/assets/icons/facebook.png'
@@ -65,7 +73,11 @@ const Casas = () => {
                 Camino A Doñihue 20
               </h1>
               <div className='flex justify-center mt-1 gap-2'>
-                <a href='https://www.facebook.com/CasaSionRancagua' target='blank'>
+                <a
+                  href='https://www.facebook.com/CasaSionRancagua'
+                  target='blank'
+                  aria-label='Facebook'
+                >
                   <img
                     className=' opacity-40'
                     src='src/assets/icons/facebook.png'
@@ -93,7 +105,11 @@ const Casas = () => {
                 Patricio lynch #1351
               </h1>
               <div className='flex justify-center mt-1 gap-2'>
-                <a href='https://www.instagram.com/casasioniquique/' target='blank'>
+                <a
+                  href='https://www.instagram.com/casasioniquique/'
+                  target='blank'
+                  aria-label='Instagram'
+                >
                   <img
                     className='opacity-40'
                     src='src/assets/icons/instagram.png'
@@ -102,7 +118,11 @@ const Casas = () => {
                     height={25}
                   />
                 </a>
-                <a href='https://www.facebook.com/profile.php?id=100082932891928' target='blank'>
+                <a
+                  href='https://www.facebook.com/profile.php?id=100082932891928'
+                  target='blank'
+                  aria-label='Facebook'
+                >
                   <img
                     className=' opacity-40'
                     src='src/assets/icons/facebook.png'

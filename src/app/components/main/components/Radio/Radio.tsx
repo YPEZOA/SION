@@ -28,10 +28,12 @@ const Radio = () => {
                   href='https://apps.apple.com/gt/app/radio-7-fm/id6446144759'
                   target='blank'
                   className='hover:scale-95'
+                  aria-label='Apple'
                 >
                   <AppstoreIcon />
                 </a>
                 <a
+                  aria-label='Android'
                   href='https://play.google.com/store/apps/details?id=app.jeusnetapp.rad7fm&hl=es_CL&gl=US&pli=1'
                   target='blank'
                   className='hover:scale-95'

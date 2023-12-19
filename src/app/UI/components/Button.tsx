@@ -37,6 +37,7 @@ const Button: React.FunctionComponent<ButtonProps> = ({
       onClick={onClickEvent}
       type='button'
       aria-labelledby={accesibilityLabel}
+      aria-label={accesibilityLabel}
       className={` transition-all duration-75 uppercase hover:scale-95
     ${backgroundColor ? backgroundColor : ''} 
     ${border ? 'border-[1px] border-[#4C4B63]' : ''} 
