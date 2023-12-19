@@ -24,10 +24,18 @@ const Radio = () => {
             <div className='flex flex-col gap-3'>
               <p className='font-extralight'> Descarga nuestra app disponible para Android y IOS</p>
               <div className='flex gap-2'>
-                <a href='' className='hover:scale-95'>
+                <a
+                  href='https://apps.apple.com/gt/app/radio-7-fm/id6446144759'
+                  target='blank'
+                  className='hover:scale-95'
+                >
                   <AppstoreIcon />
                 </a>
-                <a href='' className='hover:scale-95'>
+                <a
+                  href='https://play.google.com/store/apps/details?id=app.jeusnetapp.rad7fm&hl=es_CL&gl=US&pli=1'
+                  target='blank'
+                  className='hover:scale-95'
+                >
                   <PlaystoreIcon />
                 </a>
               </div>

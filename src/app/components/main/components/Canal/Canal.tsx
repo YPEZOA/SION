@@ -4,6 +4,10 @@ import ElementDelay from '@/app/components/layouts/elements/ElementDelay'
 import SectionContainer from '@/app/components/layouts/elements/SectionContainer'
 
 const Canal = () => {
+  const gotoCanal = () => {
+    window.open('https://www.youtube.com/@CasaSionSantiago', '_blank')
+  }
+
   return (
     <SectionContainer>
       <ElementDelay>
@@ -30,6 +34,7 @@ const Canal = () => {
             por nuestro canal, desde las <span className='font-bold'>11:00am</span>
           </p>
           <Button
+            onClickEvent={() => gotoCanal()}
             backgroundColor='bg-primary'
             customStyles='text-white w-max'
             text='ir al canal'

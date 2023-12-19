@@ -43,7 +43,9 @@
   font-display: swap;
 }
 
-body {
+body,
+html {
   background-color: #fff;
   font-family: 'PoppinsRegular', Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }

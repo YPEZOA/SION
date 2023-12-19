@@ -8,7 +8,7 @@ import MidContent from './components/MidContent/MidContent'
 
 const Main = () => {
   return (
-    <>
+    <div className='relative'>
       <FirstContent />
       <Vision />
       <Reuniones />
@@ -18,7 +18,7 @@ const Main = () => {
         <Servidores />
       </div>
       <Radio />
-    </>
+    </div>
   )
 }
 

@@ -3,12 +3,11 @@ import React from 'react'
 interface Props {
   children: React.ReactNode
   styles?: string
-  props?: any
 }
 
-const SectionContainer = ({ children, styles, props }: Props) => {
+const SectionContainer = ({ children, styles }: Props) => {
   return (
-    <section className={`container w-11/12 xl:w-10/12 py-32  ${styles ? styles : ''}`} {...props}>
+    <section className={`container w-11/12 xl:w-10/12 py-32  ${styles ? styles : ''}`}>
       {children}
     </section>
   )

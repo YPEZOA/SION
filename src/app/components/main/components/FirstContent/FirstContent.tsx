@@ -1,5 +1,5 @@
 import ElementDelay from '@/app/components/layouts/elements/ElementDelay'
-import contentBackground from 'src/assets/images/first-content.png'
+import contentBackground from 'src/assets/images/first-content.webp'
 import ArrowDown from '@/app/UI/icons/ArrowDown'
 
 const FirstContent = () => {

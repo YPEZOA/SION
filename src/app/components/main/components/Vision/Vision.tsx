@@ -1,6 +1,9 @@
 import PlusIcon from '@/app/UI/icons/PlusIcon'
 import ElementDelay from '@/app/components/layouts/elements/ElementDelay'
 import SectionContainer from '@/app/components/layouts/elements/SectionContainer'
+import visionImage1 from 'src/assets/images/vision-image1.webp'
+import visionImage2 from 'src/assets/images/vision-image2.webp'
+import visionImage3 from 'src/assets/images/vision-image3.webp'
 
 const Vision = () => {
   return (
@@ -9,11 +12,11 @@ const Vision = () => {
         {/* Images */}
         <ElementDelay delay={0.4} styles='w-full md:w-[50%] flex gap-5'>
           <div className='flex items-center'>
-            <img src='src/assets/images/vision-image1.png' alt='Evangelización' />
+            <img src={visionImage1} alt='Evangelización' />
           </div>
           <div className='flex flex-col justify-between'>
-            <img src='src/assets/images/vision-image2.png' alt='Afirmar' />
-            <img src='src/assets/images/vision-image3.png' alt='Discipular' />
+            <img src={visionImage2} alt='Afirmar' />
+            <img src={visionImage3} alt='Discipular' />
           </div>
         </ElementDelay>
 

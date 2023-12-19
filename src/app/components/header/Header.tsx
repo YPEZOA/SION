@@ -5,7 +5,8 @@ import FaceIcon from '@/app/UI/icons/FaceIcon'
 import YoutubeIcon from '@/app/UI/icons/YoutubeIcon'
 import ElementDelay from '../layouts/elements/ElementDelay'
 import HamburguerMenu from '@/app/UI/icons/Hamburguer'
-import SionIcon from '@/app/UI/icons/SionIcon'
+import logoSion from 'src/assets/icons/casa-sion-logo.png'
+import logoSionBlack from 'src/assets/icons/logo-sion-black.png'
 
 interface LinkProps {
   path: string
@@ -15,13 +16,16 @@ interface LinkProps {
 const Navlink = ({ path, children }: LinkProps) => {
   const { pathname } = useLocation()
   const pathMatched = path === pathname
+  const defaultPath = pathname === '/'
 
   return (
     <Link
       style={{
         transition: 'all .5s ease',
       }}
-      className='group text-white text-[18px] rounded-md hover:underline-offset-8 font-regular'
+      className={`${
+        defaultPath ? 'text-white' : 'text-black'
+      } group  text-[18px] rounded-md hover:underline-offset-8 font-regular`}
       to={path}
     >
       {children}
@@ -36,10 +40,12 @@ const Navlink = ({ path, children }: LinkProps) => {
 }
 
 const Header = () => {
+  const { pathname } = useLocation()
+  const defaultPath = pathname === '/'
   return (
-    <nav className='absolute w-full z-20'>
+    <nav className={`${defaultPath ? 'absolute' : ''} w-full z-20`}>
       {/* RRSS section */}
-      <div className='flex items-center bg-primary h-[55px]'>
+      <div className={`${defaultPath ? 'bg-primary' : 'bg-secondary'} flex items-center h-[55px]`}>
         <div className='w-11/12 xl:w-10/12 mx-auto '>
           <ElementDelay motionless={false} delay={0.3} styles='flex justify-between items-center'>
             <a href='https://www.radio7fm.cl/' target='blank'>
@@ -67,16 +73,27 @@ const Header = () => {
 
       {/* Route Links */}
       <ElementDelay motionless={false} delay={0.3}>
-        <div className='w-11/12 xl:w-10/12 mx-auto py-8 border-b border-white'>
+        <div
+          className={`w-11/12 xl:w-10/12 mx-auto py-8 border-b ${
+            defaultPath ? 'border-white' : 'border-gray-500'
+          } ${pathname === '/casas-avivamiento' ? 'border-none' : ''}`}
+        >
           <div className='hidden lg:flex items-center justify-between'>
             <div className='flex gap-10'>
               <Navlink path='/'>Inicio</Navlink>
               <Navlink path='/casas-avivamiento'>Casas de avivamiento</Navlink>
             </div>
             <Link to='/' className='mr-20'>
-              <div className='flex items-center transition ease-in-out delay-50 duration-300 hover:scale-95 cursor-pointer'>
-                <SionIcon />
-                <span className='text-white text-xl ml-1 mt-2'>Sion Santiago</span>
+              <div className='flex items-center transition ease-in-out delay-50 duration-300 cursor-pointer hover:scale-95'>
+                <img
+                  src={defaultPath ? logoSion : logoSionBlack}
+                  alt='Casa Sion Logo'
+                  width={40}
+                  height={40}
+                />
+                <span className={`${defaultPath ? 'text-white' : 'text-black'} text-lg ml-1 mt-2`}>
+                  Sion Santiago
+                </span>
               </div>
             </Link>
 

@@ -2,8 +2,19 @@ import SectionContainer from '@/app/components/layouts/elements/SectionContainer
 import Cards from './components/Card/Cards'
 import ElementDelay from '@/app/components/layouts/elements/ElementDelay'
 import Button from '@/app/UI/components/Button'
+import { useNavigate } from 'react-router-dom'
 
 const Reuniones = () => {
+  const navigate = useNavigate()
+
+  const goToCasasavivamiento = () => {
+    navigate('/casas-avivamiento')
+  }
+
+  const goToEscuelas = () => {
+    navigate('/escuelas')
+  }
+
   return (
     <div className='bg-neutral_light'>
       <SectionContainer>
@@ -21,11 +32,13 @@ const Reuniones = () => {
         <ElementDelay>
           <div className='flex flex-col md:flex-row justify-center gap-4 md:gap-12 mt-10'>
             <Button
+              onClickEvent={() => goToCasasavivamiento()}
               text='casas de avivamiento'
               accesibilityLabel='Ir a pantalla Casas de avivamiento'
               border
             />
             <Button
+              onClickEvent={() => goToEscuelas()}
               text='escuelas de la visión'
               accesibilityLabel='Ir a pantalla Escuelas de la visión'
               border

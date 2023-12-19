@@ -1,5 +1,7 @@
 import ElementDelay from '@/app/components/layouts/elements/ElementDelay'
 import SectionContainer from '@/app/components/layouts/elements/SectionContainer'
+import servidorImage from 'src/assets/images/servidores1.webp'
+import servidorImage2 from 'src/assets/images/servidores2.webp'
 
 const Servidores = () => {
   return (
@@ -8,7 +10,7 @@ const Servidores = () => {
         <ElementDelay styles='relative flex-1 flex justify-center h-[530px]'>
           <img
             className='absolute top-0 left-0 hidden md:block'
-            src='src/assets/images/servidores2.png'
+            src={servidorImage2}
             alt='Servidores'
             width={360}
             height={360}
@@ -16,7 +18,7 @@ const Servidores = () => {
           <div className='w-[360px] h-[360px] bg-secondary mt-14 '></div>
           <img
             className='absolute bottom-0 right-0'
-            src='src/assets/images/servidores1.png'
+            src={servidorImage}
             alt='Servidores'
             width={360}
             height={360}
