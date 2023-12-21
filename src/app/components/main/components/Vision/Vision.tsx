@@ -12,11 +12,11 @@ const Vision = () => {
         {/* Images */}
         <ElementDelay delay={0.4} styles='w-full md:w-[50%] flex gap-5'>
           <div className='flex items-center'>
-            <img src={visionImage1} alt='Evangelización' />
+            <img src={visionImage1} alt='Evangelización' width={450} height={550} />
           </div>
           <div className='flex flex-col justify-between'>
-            <img src={visionImage2} alt='Afirmar' />
-            <img src={visionImage3} alt='Discipular' />
+            <img src={visionImage2} alt='Afirmar' width={223} height={228} />
+            <img src={visionImage3} alt='Discipular' width={223} height={228} />
           </div>
         </ElementDelay>
 

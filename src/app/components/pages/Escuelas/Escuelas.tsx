@@ -8,7 +8,7 @@ import Steps from './components/Steps'
 const Escuelas = () => {
   return (
     <>
-      <SectionContainer>
+      <SectionContainer styles='py-8 md:py-32'>
         <header>
           <ElementDelay styles='flex flex-col gap-4 md:flex-row justify-between items-center'>
             <h1 className='text-5xl'>Escuelas de la visión</h1>
@@ -21,9 +21,9 @@ const Escuelas = () => {
       </SectionContainer>
       <div className='relative lg:h-screen'>
         <AnimationInline styles='flex justify-end'>
-          <div className='absolute hidden md:block bg-primary left-0 lg:top-10 md:top-8 2xl:h-[90%] xl:h-[70%] h-[60%] w-[95%]'></div>
+          <div className='absolute bg-primary left-0 -bottom-6 md:bottom-2 lg:top-10 md:top-8 2xl:h-[90%] xl:h-[70%] h-[60%] w-[95%]'></div>
           <img
-            className='w-full md:w-[95%] z-10'
+            className='w-full md:w-[95%] z-0'
             src={escuelasImage}
             alt='Aprendizaje'
             width={'95%'}

@@ -22,7 +22,7 @@ const Steps = () => {
           <span className='text-white text-3xl z-10'>2</span>
         </div>
         <div>
-          <h1 className='font-semibold'>Nuevos comienzos</h1>
+          <h1 className='font-semibold'>Discípulos</h1>
           <p className='text-secondary mt-4'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ibore et
             dolore magna aliqua.
@@ -36,7 +36,7 @@ const Steps = () => {
           <span className='text-white text-3xl z-10'>3</span>
         </div>
         <div>
-          <h1 className='font-semibold'>Nuevos comienzos</h1>
+          <h1 className='font-semibold'>Líderes</h1>
           <p className='text-secondary mt-4'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ibore et
             dolore magna aliqua.
