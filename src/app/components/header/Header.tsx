@@ -8,6 +8,7 @@ import logoSionBlack from 'src/assets/icons/logo-sion-black.png'
 import MenuResponsive from './components/MenuResponsive'
 import useHeader from './useHeader'
 import LinkItem from './components/LinkItem'
+import radio7 from 'src/assets/icons/radio7-logo.png'
 
 const Header = () => {
   const { states } = useHeader()
@@ -23,12 +24,7 @@ const Header = () => {
         <div className='w-11/12 xl:w-10/12 mx-auto '>
           <ElementDelay motionless={false} delay={0.3} styles='flex justify-between items-center'>
             <a href='https://www.radio7fm.cl/' target='blank' aria-label='Radio7'>
-              <img
-                src='src/assets/icons/radio7-logo.png'
-                alt='Logo radio7'
-                width={100}
-                height={100}
-              />
+              <img src={radio7} alt='Logo radio7' width={100} height={100} />
             </a>
             <div className='flex items-center gap-1'>
               <a

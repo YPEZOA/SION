@@ -2,6 +2,7 @@ import AppstoreIcon from '@/app/UI/icons/Appstore'
 import PlaystoreIcon from '@/app/UI/icons/PlayStore'
 import ElementDelay from '@/app/components/layouts/elements/ElementDelay'
 import SectionContainer from '@/app/components/layouts/elements/SectionContainer'
+import radio7 from 'src/assets/icons/radio7-logo.png'
 
 const Radio = () => {
   return (
@@ -45,13 +46,7 @@ const Radio = () => {
           </div>
         </ElementDelay>
         <ElementDelay delay={0.5} styles='w-[40%]'>
-          <img
-            className='mx-auto'
-            src='src/assets/icons/radio7-logo.png'
-            alt='Radio 7'
-            width={250}
-            height={250}
-          />
+          <img className='mx-auto' src={radio7} alt='Radio 7' width={250} height={250} />
         </ElementDelay>
       </SectionContainer>
     </div>
