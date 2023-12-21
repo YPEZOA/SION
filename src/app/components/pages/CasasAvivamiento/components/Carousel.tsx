@@ -6,7 +6,7 @@ import ElementDelay from '@/app/components/layouts/elements/ElementDelay'
 const Carousel = () => {
   return (
     <ElementDelay>
-      <ScrollCarousel autoplay speed={7} smartSpeed>
+      <ScrollCarousel autoplay speed={6} smartSpeed direction='ltr'>
         {carouselItems.map((item, index) => (
           <CarouselItem key={index} data={item} />
         ))}

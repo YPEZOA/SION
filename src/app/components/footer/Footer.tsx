@@ -5,7 +5,7 @@ import logoSion from 'src/assets/icons/casa-sion-logo.png'
 const Footer = () => {
   return (
     <footer className='bg-secondary relative'>
-      <SectionContainer styles='flex flex-col gap-10 md:flex-row md:justify-between items-start md:items-center text-white relative'>
+      <SectionContainer styles='flex flex-col gap-10 md:flex-row md:justify-between items-start md:items-center text-white relative py-14'>
         <div className='flex flex-col'>
           <img className='mb-4 opacity-70' src={logoSion} alt='Sion logo' width={35} height={35} />
           <h1 className='text-[#F9F9F9] font-extrabold tracking-tighter text-3xl mb-5'>

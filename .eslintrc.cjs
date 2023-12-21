@@ -15,5 +15,6 @@ module.exports = {
     'no-nested-ternary': 'error',
     'no-explicity-any': 'off',
     '@typescript-eslint/no-unused-vars': 'warn',
+    'react-hooks/exhaustive-deps': 'off',
   },
 }
