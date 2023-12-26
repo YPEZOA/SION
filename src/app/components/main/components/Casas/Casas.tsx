@@ -30,7 +30,7 @@ const Casas = () => {
           </ElementDelay>
           <ElementDelay styles='w-full'>
             <main className='flex flex-col gap-5 md:gap-0  justify-around items-center  md:flex-row mt-16'>
-              <div className='flex flex-col items-center shadow-lg pb-5 w-[290px] bg-white'>
+              <div className='flex flex-col items-center shadow-lg pb-5 w-[290px] bg-white rounded-t-md overflow-hidden'>
                 <img
                   className='w-full'
                   src={sionIquique}
@@ -43,7 +43,7 @@ const Casas = () => {
                 <div className='mt-4 flex gap-1'>
                   <Button
                     onClickEvent={() => handleGoTo('https://www.instagram.com/casasioniquique/')}
-                    customStyles='py-1 px-1'
+                    customStyles='py-0 px-0'
                     accesibilityLabel='Instagram Sion Santiago'
                     icon={<InstaIcon color={colors.secondary} />}
                   />
@@ -52,14 +52,14 @@ const Casas = () => {
                     onClickEvent={() =>
                       handleGoTo('https://www.facebook.com/profile.php?id=100082932891928')
                     }
-                    customStyles='py-1 px-1'
+                    customStyles='py-0 px-0'
                     accesibilityLabel='Instagram Sion Santiago'
                     icon={<FaceIcon color={colors.secondary} />}
                   />
                 </div>
                 <div className='mt-10 h-1 bg-primary w-[80px] rounded-full'></div>
               </div>
-              <div className='flex flex-col items-center pb-5 shadow-lg w-[290px] bg-white'>
+              <div className='flex flex-col items-center pb-5 shadow-lg w-[290px] bg-white rounded-t-md overflow-hidden'>
                 <img
                   className='w-full'
                   src={sionRancagua}
@@ -72,14 +72,14 @@ const Casas = () => {
                 <div className='mt-4 flex gap-1'>
                   <Button
                     onClickEvent={() => handleGoTo('https://www.facebook.com/CasaSionRancagua')}
-                    customStyles='py-1 px-1'
+                    customStyles='py-0 px-0'
                     accesibilityLabel='Instagram Sion Santiago'
                     icon={<FaceIcon color={colors.secondary} />}
                   />
                 </div>
                 <div className='mt-10 h-1 bg-primary w-[80px] rounded-full'></div>
               </div>
-              <div className='flex flex-col items-center pb-5 shadow-lg w-[290px] bg-white'>
+              <div className='flex flex-col items-center pb-5 shadow-lg w-[290px] bg-white rounded-t-md overflow-hidden'>
                 <img
                   className='w-full'
                   src={sionSantiago}
@@ -91,16 +91,16 @@ const Casas = () => {
                 <p className='text-secondary mt-5'>Dr. Sotero del río #77</p>
                 <div className='mt-4 flex gap-1'>
                   <Button
+                    customStyles='py-0 px-0'
                     onClickEvent={() =>
                       handleGoTo('https://www.instagram.com/casa_sion_santiago_/')
                     }
-                    customStyles='py-1 px-1'
                     accesibilityLabel='Instagram Sion Santiago'
                     icon={<InstaIcon color={colors.secondary} />}
                   />
                   <Button
+                    customStyles='py-0 px-0'
                     onClickEvent={() => handleGoTo('https://www.facebook.com/CasaSionSantiagoo')}
-                    customStyles='py-2 px-1'
                     accesibilityLabel='Instagram Sion Santiago'
                     icon={<FaceIcon color={colors.secondary} />}
                   />

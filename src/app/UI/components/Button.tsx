@@ -19,7 +19,7 @@ const Button: React.FunctionComponent<ButtonProps> = ({
   customStyles = '',
   onClickEvent,
 }) => {
-  const defaultStyles = 'rounded-[5px] py-4 px-10'
+  const defaultStyles = 'rounded-[5px] '
 
   const renderContent = () => {
     if (!!icon && text?.length)
@@ -38,7 +38,7 @@ const Button: React.FunctionComponent<ButtonProps> = ({
       type='button'
       aria-labelledby={accesibilityLabel}
       aria-label={accesibilityLabel}
-      className={` transition-all duration-75 uppercase hover:scale-95
+      className={`py-4 px-10 transition-all duration-75 uppercase hover:scale-95
     ${backgroundColor ? backgroundColor : ''} 
     ${border ? 'border-[1px] border-[#4C4B63]' : ''} 
     ${
