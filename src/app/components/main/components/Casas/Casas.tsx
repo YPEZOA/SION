@@ -1,4 +1,3 @@
-import Button from '@/app/UI/components/Button'
 import FaceIcon from '@/app/UI/icons/FaceIcon'
 import InstaIcon from '@/app/UI/icons/Instagram'
 import ElementDelay from '@/app/components/layouts/elements/ElementDelay'
@@ -9,10 +8,6 @@ import sionRancagua from 'src/assets/images/sion-rancagua.png'
 import sionSantiago from 'src/assets/images/sion-santiago.png'
 
 const Casas = () => {
-  const handleGoTo = (url: string) => {
-    window.open(url, '_blank')
-  }
-
   return (
     <div className='bg-[#F9F9F9]'>
       <SectionContainer>
