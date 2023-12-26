@@ -39,14 +39,14 @@ const Casas = () => {
                   <a
                     href='https://www.instagram.com/casasioniquique/'
                     target='blank'
-                    aria-labelledby='Instagram Sion Iquique'
+                    aria-label='Instagram Sion Iquique'
                   >
                     <InstaIcon color={colors.secondary} />
                   </a>
                   <a
                     href='https://www.facebook.com/profile.php?id=100082932891928'
                     target='blank'
-                    aria-labelledby='Instagram Sion Iquique'
+                    aria-label='Instagram Sion Iquique'
                   >
                     <FaceIcon color={colors.secondary} />
                   </a>
@@ -67,7 +67,7 @@ const Casas = () => {
                   <a
                     href='https://www.facebook.com/CasaSionRancagua'
                     target='blank'
-                    aria-labelledby='Instagram Sion Rancagua'
+                    aria-label='Instagram Sion Rancagua'
                   >
                     <FaceIcon color={colors.secondary} />
                   </a>
@@ -88,14 +88,14 @@ const Casas = () => {
                   <a
                     href='https://www.instagram.com/casa_sion_santiago_/'
                     target='blank'
-                    aria-labelledby='Instagram Sion Santiago'
+                    aria-label='Instagram Sion Santiago'
                   >
                     <InstaIcon color={colors.secondary} />
                   </a>
                   <a
                     href='https://www.facebook.com/CasaSionSantiagoo'
                     target='blank'
-                    aria-labelledby='Facebook Sion Santiago'
+                    aria-label='Facebook Sion Santiago'
                   >
                     <FaceIcon color={colors.secondary} />
                   </a>
