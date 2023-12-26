@@ -43,7 +43,7 @@ const Casas = () => {
                 <div className='mt-4 flex gap-1'>
                   <Button
                     onClickEvent={() => handleGoTo('https://www.instagram.com/casasioniquique/')}
-                    customStyles='py-0 px-0'
+                    customStyles='py-1 px-1'
                     accesibilityLabel='Instagram Sion Santiago'
                     icon={<InstaIcon color={colors.secondary} />}
                   />
@@ -52,7 +52,7 @@ const Casas = () => {
                     onClickEvent={() =>
                       handleGoTo('https://www.facebook.com/profile.php?id=100082932891928')
                     }
-                    customStyles='py-0 px-0'
+                    customStyles='py-1 px-1'
                     accesibilityLabel='Instagram Sion Santiago'
                     icon={<FaceIcon color={colors.secondary} />}
                   />
@@ -72,7 +72,7 @@ const Casas = () => {
                 <div className='mt-4 flex gap-1'>
                   <Button
                     onClickEvent={() => handleGoTo('https://www.facebook.com/CasaSionRancagua')}
-                    customStyles='py-0 px-0'
+                    customStyles='py-1 px-1'
                     accesibilityLabel='Instagram Sion Santiago'
                     icon={<FaceIcon color={colors.secondary} />}
                   />
@@ -94,13 +94,13 @@ const Casas = () => {
                     onClickEvent={() =>
                       handleGoTo('https://www.instagram.com/casa_sion_santiago_/')
                     }
-                    customStyles='py-0 px-0'
+                    customStyles='py-1 px-1'
                     accesibilityLabel='Instagram Sion Santiago'
                     icon={<InstaIcon color={colors.secondary} />}
                   />
                   <Button
                     onClickEvent={() => handleGoTo('https://www.facebook.com/CasaSionSantiagoo')}
-                    customStyles='py-0 px-0'
+                    customStyles='py-2 px-1'
                     accesibilityLabel='Instagram Sion Santiago'
                     icon={<FaceIcon color={colors.secondary} />}
                   />
