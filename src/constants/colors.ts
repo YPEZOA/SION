@@ -3,7 +3,7 @@ export const colors = {
   primary500: '#30DED5',
   primary300: '#C2FFFC',
   primary100: '#F2FFFE',
-  secondary: '#0089E4',
+  secondary: '#4C4B63',
   secondary500: '#4FAFFF',
   orangeSecondary: '#E9791A',
   orangeSecondary500: '#FF9A3E',

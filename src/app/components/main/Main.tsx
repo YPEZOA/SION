@@ -5,6 +5,7 @@ import Canal from '@/app/components/main/components/Canal/Canal'
 import Servidores from '@/app/components/main/components/Servidores/Servidores'
 import Radio from '@/app/components/main/components/Radio/Radio'
 import MidContent from './components/MidContent/MidContent'
+import Casas from './components/Casas/Casas'
 
 const Main = () => {
   return (
@@ -17,6 +18,7 @@ const Main = () => {
         <Canal />
         <Servidores />
       </div>
+      <Casas />
       <Radio />
     </div>
   )

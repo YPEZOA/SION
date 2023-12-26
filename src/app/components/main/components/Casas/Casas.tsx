@@ -1,142 +1,117 @@
+import Button from '@/app/UI/components/Button'
+import FaceIcon from '@/app/UI/icons/FaceIcon'
+import InstaIcon from '@/app/UI/icons/Instagram'
 import ElementDelay from '@/app/components/layouts/elements/ElementDelay'
-import HeadingAnimation from '@/app/components/layouts/elements/HeadingAnimation'
 import SectionContainer from '@/app/components/layouts/elements/SectionContainer'
+import { colors } from '@/constants/colors'
+import sionIquique from 'src/assets/images/sion-iquique.png'
+import sionRancagua from 'src/assets/images/sion-rancagua.png'
+import sionSantiago from 'src/assets/images/sion-santiago.png'
 
 const Casas = () => {
+  const handleGoTo = (url: string) => {
+    window.open(url, '_blank')
+  }
+
   return (
-    <>
-      <HeadingAnimation>
-        <h1 className='font-thin tracking-[2px] text-3xl md:text-4xl uppercase text-[#F9F9F9]'>
-          nuestra <span className='font-extrabold'>red</span>
-        </h1>
-      </HeadingAnimation>
+    <div className='bg-[#F9F9F9]'>
       <SectionContainer>
-        <div className='flex flex-col gap-10 md:gap-0 md:flex-row items-center justify-around mt-20'>
+        <div className='flex flex-col justify-center items-center'>
           <ElementDelay>
-            <div className='text-center flex flex-col items-center gap-30 justify-center'>
-              <img
-                className='drop-shadow-[0_0_3px_#646464]'
-                src='src/assets/icons/sion-santiago.png'
-                alt='Casa Sion Santiago'
-                width={70}
-              />
-              <span className='text-lg xl:text-3xl mt-1 block font-bold tracking-tighter text-gray-500'>
-                La Florida
-              </span>
+            <header className='text-center'>
+              <h1 className='font-semibold text-black text-3xl mb-6'>
+                Asiste a tu Casa más cercana
+              </h1>
+              <p className='text-secondary md:w-4/6 mx-auto'>
+                Sino que siguiendo la verdad en amor, crezcamos en todo en aquel que es la cabeza,
+                esto es, <span className='font-semibold'> Cristo</span>.
+              </p>
+            </header>
+          </ElementDelay>
+          <ElementDelay styles='w-full'>
+            <main className='flex flex-col gap-5 md:gap-0  justify-around items-center  md:flex-row mt-16'>
+              <div className='flex flex-col items-center shadow-lg pb-5 w-[290px] bg-white'>
+                <img
+                  className='w-full'
+                  src={sionIquique}
+                  alt='Casa sion Iquique'
+                  width={120}
+                  height={120}
+                />
+                <h1 className='text-2xl mt-5 font-semibold'>Sion Iquique</h1>
+                <p className='text-secondary mt-5'>Patricio Lynch #1351</p>
+                <div className='mt-4 flex gap-1'>
+                  <Button
+                    onClickEvent={() => handleGoTo('https://www.instagram.com/casasioniquique/')}
+                    customStyles='py-0 px-0'
+                    accesibilityLabel='Instagram Sion Santiago'
+                    icon={<InstaIcon color={colors.secondary} />}
+                  />
 
-              <h1 className='text-lg tracking-tighter text-gray-500 leading-7 xl:text-1xl'>
-                Dr. Sotero Del Río #77
-                <div className='flex justify-center mt-1 gap-2'>
-                  <a
-                    href='https://www.instagram.com/casa_sion_santiago_/'
-                    target='blank'
-                    aria-label='Instagram'
-                  >
-                    <img
-                      className='opacity-40'
-                      src='src/assets/icons/instagram.png'
-                      alt='Instagram casa Santiago'
-                      width={25}
-                      height={25}
-                    />
-                  </a>
-                  <a
-                    href='https://www.facebook.com/CasaSionSantiagoo'
-                    target='blank'
-                    aria-label='Facebook'
-                  >
-                    <img
-                      className=' opacity-40'
-                      src='src/assets/icons/facebook.png'
-                      alt='Facebook casa Santiago'
-                      width={25}
-                      height={25}
-                    />
-                  </a>
+                  <Button
+                    onClickEvent={() =>
+                      handleGoTo('https://www.facebook.com/profile.php?id=100082932891928')
+                    }
+                    customStyles='py-0 px-0'
+                    accesibilityLabel='Instagram Sion Santiago'
+                    icon={<FaceIcon color={colors.secondary} />}
+                  />
                 </div>
-              </h1>
-            </div>
-          </ElementDelay>
-          <ElementDelay delay={0.5}>
-            <div className='text-center flex flex-col items-center'>
-              <img
-                className='drop-shadow-[0_0_3px_#646464]'
-                src='src/assets/icons/sion-rancagua.png'
-                alt='Casa Sion Rancagua'
-                width={70}
-              />
-              <span className='text-lg xl:text-3xl mt-1 font-bold block tracking-tighter text-gray-500'>
-                Rancagua
-              </span>
-
-              <h1 className='text-lg tracking-tighter text-gray-500 leading-7 xl:text-1xl'>
-                Camino A Doñihue 20
-              </h1>
-              <div className='flex justify-center mt-1 gap-2'>
-                <a
-                  href='https://www.facebook.com/CasaSionRancagua'
-                  target='blank'
-                  aria-label='Facebook'
-                >
-                  <img
-                    className=' opacity-40'
-                    src='src/assets/icons/facebook.png'
-                    alt='Instagram casa Rancagua'
-                    width={25}
-                    height={25}
-                  />
-                </a>
+                <div className='mt-10 h-1 bg-primary w-[80px] rounded-full'></div>
               </div>
-            </div>
-          </ElementDelay>
-          <ElementDelay delay={0.6}>
-            <div className='text-center flex flex-col items-center'>
-              <img
-                className='drop-shadow-[0_0_3px_#646464]'
-                src='src/assets/icons/sion-iquique.png'
-                alt='Casa Sion Iquique'
-                width={70}
-              />
-              <span className='text-lg xl:text-3xl mt-1 block font-bold tracking-tighter text-gray-500'>
-                Iquique
-              </span>
-
-              <h1 className='text-lg tracking-tighter text-gray-500 leading-7 xl:text-1xl'>
-                Patricio lynch #1351
-              </h1>
-              <div className='flex justify-center mt-1 gap-2'>
-                <a
-                  href='https://www.instagram.com/casasioniquique/'
-                  target='blank'
-                  aria-label='Instagram'
-                >
-                  <img
-                    className='opacity-40'
-                    src='src/assets/icons/instagram.png'
-                    alt='Instagram casa Iquique'
-                    width={25}
-                    height={25}
+              <div className='flex flex-col items-center pb-5 shadow-lg w-[290px] bg-white'>
+                <img
+                  className='w-full'
+                  src={sionRancagua}
+                  alt='Casa sion Rancagua'
+                  width={120}
+                  height={120}
+                />
+                <h1 className='text-2xl font-semibold mt-5'>Sion Rancagua</h1>
+                <p className='text-secondary mt-5'>Camino a Doñihue 20</p>
+                <div className='mt-4 flex gap-1'>
+                  <Button
+                    onClickEvent={() => handleGoTo('https://www.facebook.com/CasaSionRancagua')}
+                    customStyles='py-0 px-0'
+                    accesibilityLabel='Instagram Sion Santiago'
+                    icon={<FaceIcon color={colors.secondary} />}
                   />
-                </a>
-                <a
-                  href='https://www.facebook.com/profile.php?id=100082932891928'
-                  target='blank'
-                  aria-label='Facebook'
-                >
-                  <img
-                    className=' opacity-40'
-                    src='src/assets/icons/facebook.png'
-                    alt='Facebook casa Iquique'
-                    width={25}
-                    height={25}
-                  />
-                </a>
+                </div>
+                <div className='mt-10 h-1 bg-primary w-[80px] rounded-full'></div>
               </div>
-            </div>
+              <div className='flex flex-col items-center pb-5 shadow-lg w-[290px] bg-white'>
+                <img
+                  className='w-full'
+                  src={sionSantiago}
+                  alt='Casa sion Santiago'
+                  width={120}
+                  height={120}
+                />
+                <h1 className='text-2xl font-semibold mt-5'>Sion Santiago</h1>
+                <p className='text-secondary mt-5'>Dr. Sotero del río #77</p>
+                <div className='mt-4 flex gap-1'>
+                  <Button
+                    onClickEvent={() =>
+                      handleGoTo('https://www.instagram.com/casa_sion_santiago_/')
+                    }
+                    customStyles='py-0 px-0'
+                    accesibilityLabel='Instagram Sion Santiago'
+                    icon={<InstaIcon color={colors.secondary} />}
+                  />
+                  <Button
+                    onClickEvent={() => handleGoTo('https://www.facebook.com/CasaSionSantiagoo')}
+                    customStyles='py-0 px-0'
+                    accesibilityLabel='Instagram Sion Santiago'
+                    icon={<FaceIcon color={colors.secondary} />}
+                  />
+                </div>
+                <div className='mt-10 h-1 bg-primary w-[80px] rounded-full'></div>
+              </div>
+            </main>
           </ElementDelay>
         </div>
       </SectionContainer>
-    </>
+    </div>
   )
 }
 
