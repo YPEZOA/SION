@@ -12,7 +12,7 @@ export const RouterRoot = () => {
   const { scrollPosition } = useMain()
   return (
     <BrowserRouter>
-      {/* <ScrollToTop /> */}
+      <ScrollToTop />
       <Header />
 
       <div className='relative flex flex-col min-h-screen'>
