@@ -41,21 +41,20 @@ const Casas = () => {
                 <h1 className='text-2xl mt-5 font-semibold'>Sion Iquique</h1>
                 <p className='text-secondary mt-5'>Patricio Lynch #1351</p>
                 <div className='mt-4 flex gap-1'>
-                  <Button
-                    onClickEvent={() => handleGoTo('https://www.instagram.com/casasioniquique/')}
-                    customStyles='py-0 px-0'
-                    accesibilityLabel='Instagram Sion Santiago'
-                    icon={<InstaIcon color={colors.secondary} />}
-                  />
-
-                  <Button
-                    onClickEvent={() =>
-                      handleGoTo('https://www.facebook.com/profile.php?id=100082932891928')
-                    }
-                    customStyles='py-0 px-0'
-                    accesibilityLabel='Instagram Sion Santiago'
-                    icon={<FaceIcon color={colors.secondary} />}
-                  />
+                  <a
+                    href='https://www.instagram.com/casasioniquique/'
+                    target='blank'
+                    aria-labelledby='Instagram Sion Iquique'
+                  >
+                    <InstaIcon color={colors.secondary} />
+                  </a>
+                  <a
+                    href='https://www.facebook.com/profile.php?id=100082932891928'
+                    target='blank'
+                    aria-labelledby='Instagram Sion Iquique'
+                  >
+                    <FaceIcon color={colors.secondary} />
+                  </a>
                 </div>
                 <div className='mt-10 h-1 bg-primary w-[80px] rounded-full'></div>
               </div>
@@ -70,12 +69,13 @@ const Casas = () => {
                 <h1 className='text-2xl font-semibold mt-5'>Sion Rancagua</h1>
                 <p className='text-secondary mt-5'>Camino a Doñihue 20</p>
                 <div className='mt-4 flex gap-1'>
-                  <Button
-                    onClickEvent={() => handleGoTo('https://www.facebook.com/CasaSionRancagua')}
-                    customStyles='py-0 px-0'
-                    accesibilityLabel='Instagram Sion Santiago'
-                    icon={<FaceIcon color={colors.secondary} />}
-                  />
+                  <a
+                    href='https://www.facebook.com/CasaSionRancagua'
+                    target='blank'
+                    aria-labelledby='Instagram Sion Rancagua'
+                  >
+                    <FaceIcon color={colors.secondary} />
+                  </a>
                 </div>
                 <div className='mt-10 h-1 bg-primary w-[80px] rounded-full'></div>
               </div>
@@ -90,20 +90,20 @@ const Casas = () => {
                 <h1 className='text-2xl font-semibold mt-5'>Sion Santiago</h1>
                 <p className='text-secondary mt-5'>Dr. Sotero del río #77</p>
                 <div className='mt-4 flex gap-1'>
-                  <Button
-                    customStyles='py-0 px-0'
-                    onClickEvent={() =>
-                      handleGoTo('https://www.instagram.com/casa_sion_santiago_/')
-                    }
-                    accesibilityLabel='Instagram Sion Santiago'
-                    icon={<InstaIcon color={colors.secondary} />}
-                  />
-                  <Button
-                    customStyles='py-0 px-0'
-                    onClickEvent={() => handleGoTo('https://www.facebook.com/CasaSionSantiagoo')}
-                    accesibilityLabel='Instagram Sion Santiago'
-                    icon={<FaceIcon color={colors.secondary} />}
-                  />
+                  <a
+                    href='https://www.instagram.com/casa_sion_santiago_/'
+                    target='blank'
+                    aria-labelledby='Instagram Sion Santiago'
+                  >
+                    <InstaIcon color={colors.secondary} />
+                  </a>
+                  <a
+                    href='https://www.facebook.com/CasaSionSantiagoo'
+                    target='blank'
+                    aria-labelledby='Facebook Sion Santiago'
+                  >
+                    <FaceIcon color={colors.secondary} />
+                  </a>
                 </div>
                 <div className='mt-10 h-1 bg-primary w-[80px] rounded-full'></div>
               </div>
